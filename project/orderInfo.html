@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单信息</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/orderInfo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shijian.css"/>
+	</head>
+	<body>
+		<header id="header">
+			<i class="goBack"></i><span>订单信息</span><b></b>
+		</header>
+		<section class="headerFill"></section>
+		<section id="content">
+			<ul class="information">
+				<li><i>联系人</i><p><input type="text" placeholder="请输入您的姓名" /></p></li>
+				<li><i>手机号</i><p><input type="text" placeholder="请输入您的手机号" /></p></li>
+				<li><i>验证码</i><p><input type="text" placeholder="填写验证码" /><span class="getCode">发送验证码</span></p></li>
+				<li><i>预约日期</i><input id="data" placeholder=""></input></li>
+			</ul>
+		</section>
+		<section class="next">
+			<a href="###" class="nextStep">立即提交</a>
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquer_shijian.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#data").shijian({
+					y:-10//当前年份+10
+				})
+				
+				
+				$('.nextStep').click(function(){
+					var val=$('#data').val();
+					console.log(val)
+				})
+							
+			})
+		</script>
+	</body>
+</html>

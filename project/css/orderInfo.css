@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body { font-size: 0.28rem; background: #f1f1f1; }
+
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 0.3rem; color: #666; background: #fff; border-bottom: 0.01rem solid #ccc; }
+#header i { width: 0.6rem; height: 100%; background: url(../img/success_return.png) no-repeat left center; background-size: 0.18rem 0.32rem; }
+#header b { width: 0.6rem; height: 100%; }
+
+.headerFill { margin-bottom: 0.1rem; }
+
+#content .information { margin-bottom: 0.45rem; padding: 0.3rem; box-sizing: border-box; color: #333; }
+#content .information li { height: 0.8rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0.1rem 0; }
+#content .information li i { font-size: 0.3rem; }
+#content .information li p { width: 5.2rem; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #fff; padding: 0 0.1rem 0 0.2rem; box-sizing: border-box; border-radius: 0.06rem; color: #999; }
+#content .information li p .getCode { width: 1.8rem; height: 0.64rem; line-height: 0.64rem; text-align: center; background: #f1f1f1; }
+#content .information li p input { height: 80%; font-size: 0.28rem; border: 0; outline: 0 none; }
+#content .information li p b { margin-right: 2.8rem; }
+#content .information li #data { width: 5.2rem; height: 100%; padding: 0 0.1rem 0 0.2rem; box-sizing: border-box; border-radius: 0.06rem; outline: 0 none; border: 0; font-size: 0.28rem; }
+
+/*下一步按钮*/
+.next { width: 100%; height: 1.2rem; padding: 0 0.5rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.next a { width: 100%; height: 0.8rem; line-height: 0.8rem; text-align: center; background: #ccc; color: #fff; border-radius: 0.06rem; background: #ff6600; }

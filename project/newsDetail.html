@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新闻详情</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/newsDetail.css"/>
+		
+	</head>
+	<body>
+		<header id="header">
+			<i class="goBack"></i><span>新闻详情</span><b></b>
+		</header>
+		<section class="headerFill"></section>
+		<section id="content">
+			<h2>咻修手机维修互联网平台服务平台</h2>
+			<h6><time>2017.06.22</time>来源于咻修行业新闻</h6>
+			<div class="banner"><img src="img/newsbanner.jpg"/></div>
+			<p>咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解，经历1年研发，于2016年9月9日正式上线。
+				咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解，经历1年研发，于2016年9月9日正式上线。
+				咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解，经历1年研发，于2016年9月9日正式上线。
+				咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解，经历1年研发，于2016年9月9日正式上线。
+			</p>
+			<p>咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解，经历1年研发，于2016年9月9日正式上线。咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解</p>
+			<p>咻修手机维修互联网服务平台，基于创始人近20年行业发展沉淀和深刻理解，经历1年研发，于2016年9月9日正式上线。基于创始人近20年行业发展沉淀和深刻理解</p>
+		</section>
+		<footer id="footer">
+		</footer>
+		
+		
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+
+		<script type="text/javascript">
+			var p=$('#content p');
+			var len=p.length;
+			var reg=/咻修/g;
+			var val="<a>咻修</a>";
+			for(var i=0;i<len;i++){
+				var text=$('#content p').eq(i).text();
+				$('#content p').eq(i).html(text.replace(reg,val))
+			}
+		</script>
+	</body>
+</html>

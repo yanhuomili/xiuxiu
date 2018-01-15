@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设备信息</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/deviceInfo.css"/>
+	</head>
+	<body>
+		<header id="header">
+			<i class="goBack"></i><span>设备信息</span><b></b>
+		</header>
+		<section class="headerFill"></section>
+		<section id="content">
+			<div class="pinpai">
+				<h2><p><i class="point"></i><span>品牌</span></p></h2>
+				<ul class="mobileBrand">
+					<li>苹果</li>
+					<li>华为</li>
+					<li>小米</li>
+					<li>乐视</li>
+					<li>OPPO</li>
+					<li>VIVO</li>
+					<li>魅族</li>
+					<li>三星</li>
+					<li>金立</li>
+					<li>努比亚</li>
+					<li>诺基亚</li>
+					<li>美图</li>
+				</ul>
+			</div>
+			<div class="model">
+				<h2><p class="leftP"><i class="point"></i><span>型号</span></p><p class="rightP"><i class="modelText"></i><span class="gt"></span></p></h2>
+				<ul>
+					<li>iPhone 1</li>
+					<li>iPhone 2</li>
+					<li>iPhone 3</li>
+					<li>iPhone 4</li>
+					<li>iPhone 5</li>
+					<li>iPhone 6</li>
+					<li>iPhone 7</li>
+					<li>iPhone 8</li>
+					<li>iPhone 9</li>
+					<li>iPhone Plus5</li>
+					<li>iPhone Plus6</li>
+					<li>iPhone Plus7</li>
+					
+				</ul>
+			</div>
+			<div class="color">
+				<h2><p class="leftP"><i class="point"></i><span>颜色</span></p><p class="rightP"><i class="phoneColor"></i><span class="gt"></span></p></h2>
+				<ul>
+					<li>黑</li>
+					<li>白</li>
+					<li>粉红</li>
+					<li>铂金</li>
+					<li>蓝</li>
+					<li>红</li>
+				</ul>
+			</div>
+			<div class="fault">
+				<h2><p class="leftP"><i class="point"></i><span>故障</span></p><p class="rightP"><i class="faultType"></i><span class="gt"></span></p></h2>
+				<ul>
+					<li>屏幕问题</li>
+					<li>外壳/边框</li>
+					<li>按键与中间键问题</li>
+					<li>声音</li>
+					<li>触屏</li>
+					<li>摄像与拍照问题</li>
+					<li>电池电源问题</li>
+					<li>其他</li>
+				</ul>
+				<dl>
+					<dt><p class="leftP"><i class="point"></i><span>故障</span></p><p class="rightP"><i class="faultType">内屏碎</i><span class="gt"></span></p></dt>
+					<dt><p class="leftP"><i class="point"></i><span>故障</span></p><p class="rightP"><i class="faultType">外屏碎</i><span class="gt"></span></p></dt>
+					<dt><p class="leftP"><i class="point"></i><span>故障</span></p><p class="rightP"><i class="faultType">边框</i><span class="gt"></span></p></dt>
+					
+				</dl>
+			</div>
+			<div class="repairWrap">
+				<div class="remark">
+					<h2><p class="leftP"><i class="point"></i><span>备注</span></p><p class=""><input type="text" placeholder="请简述您手机的故障情况" /></p></h2>
+				</div>
+				<div class="repair">
+					<h2><p class="leftP"><i class="point"></i><span>维修方案</span></p><p class="repairExplain"><i class="">维修说明</i><span class="wenhao"><img src="img/wenhao.jpg"/></span></p></h2>
+					<ul>
+						<li><span>屏幕碎</span><b>&yen;<i>500</i><em class="select"><img src="img/select.png"/></em></b></li>
+						<li><span>显示屏触摸正常</span><b>&yen;<i>0</i><em class="select"><img src="img/select.png"/></em></b></li>
+					</ul>
+					<p class="tip"><i><img src="img/tip.jpg"/></i>此方案报价为官方报价，具体报价以真实报价为准！</p>
+				</div>
+			</div>
+		</section>
+		<section class="grayLayout">
+			<div class="modalBox">
+					<h5 class="problem">选择屏幕问题</h5>
+				<ul class="">
+					<!--<li class="problem">选择屏幕问题</li>-->
+					<li class="problemDetail"><p><i></i><span>内屏碎</span></p><b>&yen;<i>660</i></b></li>
+					<li class="problemDetail"><p><i></i><span>外屏碎</span></p><b>&yen;<i>660</i></b></li>
+					<li class="problemDetail"><p><i></i><span>其他</span></p><b>&yen;<i>660</i></b></li>
+					<!--<li class="lastLi"><span class="cancel">取消</span><span class="sure">确定</span></li>-->
+				</ul>
+				<p class="lastP"><span class="cancel">取消</span><span class="sure">确定</span></p>
+			</div>
+		</section>
+		<section class="nextFill"></section>
+		<section class="next">
+			<a href="###" class="nextStep">下一步</a>
+		</section>
+		<section class="footerFill"></section>
+		
+		</footer>
+		
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				var arr=[1,2,3,4,5]
+				console.log(arr.indexOf(9))
+				
+				
+				var index=localStorage.getItem('phoneIndex');
+				var id=localStorage.getItem('id');
+				console.log(index,id)
+				$('.mobileBrand li').eq(index).addClass('bgcActive').siblings().removeClass('bgcActive');
+				$('.model').show();
+				//选择品牌
+				$('.mobileBrand li').click(function(){
+					$(this).addClass('bgcActive').siblings().removeClass('bgcActive');
+				})
+				
+				//选择型号
+				$('.model ul').on('tap','li',function(){
+					var val=$(this).text();
+					$(this).addClass('borderActive').siblings().removeClass('borderActive');
+					$('.modelText').text(val);
+					$('.rightP').show();
+					$(this).parent().hide();
+					$('.color').show();
+					
+				})
+				//退回来选
+				$('#content h2').tap(function(){
+					$(this).next().show().find('.rightP').hide();
+//					$('.model ul').show();
+				})
+				//选择颜色
+				$('.color>ul').on('tap','li',function(){
+					var val=$(this).text();
+					$('.phoneColor').text(val);
+					$(this).addClass('colorActive').siblings().removeClass('colorActive');
+					$(this).parent().hide();
+					$('.fault').show();
+				})
+				
+				//选择故障
+				$('.fault>ul').on('tap','li',function(){
+					var index=$(this).index();
+					localStorage.setItem('falultId',index)
+//					$(this).addClass('colorActive');
+					$('.grayLayout').show();//显示具体故障的选择
+				})
+				//选择具体故障
+				var selete=false;
+				$('.problemDetail').click(function(){
+					var num=0;
+					var child=$('.problemDetail>p>i');
+					var len=$('.problemDetail>p>i').length;
+					$(this).children().find('i').toggleClass('active');
+					for(var i=0;i<len;i++){
+						if(child.eq(i).hasClass('active')){
+							num++
+						}
+					}
+					if(num!=0){
+						$('.sure').addClass('active');
+						selete=true;
+					}else{
+						$('.sure').removeClass('active');
+					}
+				})
+				
+				//取消
+				$('.cancel').tap(function(){
+					$('.problemDetail>p>i').removeClass('active');
+					$('.sure').removeClass('active');
+					$('.grayLayout').hide();
+				})
+				$('.sure').tap(function(){
+					$('.grayLayout').hide();
+					$('.nextStep').addClass('active');
+					if(selete){
+						var index=localStorage.getItem('falultId');
+						console.log(index);
+						$('.fault li').eq(index).addClass('colorActive');
+					}
+					selete=false;
+					
+				})
+				
+				//选择维修方案
+				$('.repair ul').on('tap','li',function(){
+					var num=0;
+					var li=$(this).parent().children();
+					var len=li.length;
+					$(this).toggleClass('active').find('.select').toggle();
+					for(var i=0;i<len;i++){
+						if(li.eq(i).hasClass('active')){
+							num++;
+						}
+					}
+					if(num!=0){
+						$('.nextStep').addClass('active');
+					}else{
+						$('.nextStep').removeClass('active');
+					}
+				})
+				
+				//下一步
+				$('.nextStep').singleTap(function(){
+					$('.fault dl').show().siblings().hide();
+					$('.repairWrap').show();
+					$(this).removeClass('active');
+				})
+				
+			})
+		</script>
+	</body>
+</html>

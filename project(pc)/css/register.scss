@@ -1,0 +1,173 @@
+@charset "utf-8";
+#wrap{
+    max-width:1920px;
+    margin: 0 auto;
+//  position: relative;
+}
+#header{
+    max-width:1920px;
+    min-width: 1200px;
+    height:100px;
+    border-bottom: 3px solid #ccc;
+    box-sizing: border-box;
+    background: #f1f1f1;
+    nav{
+        width:1200px;
+        height:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .logo{
+            display: flex;
+            align-items: center;
+            >img{
+                width:50px;
+                height: 50px;
+                margin-right:5px;
+            }
+            >span{
+                font-size: 36px;
+                letter-spacing: 5px;
+            }
+        }
+        .enter{
+            a{
+                color: #248ac8;
+                display: inline;
+            }
+            
+        }
+    }
+   
+}
+#content{
+    width:1200px;
+    padding: 165px 0 340px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        width:580px;
+        height:390px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        >.line{
+            width:1px;
+            height:100%;
+            background: linear-gradient(to bottom,white 10%,#ccc 50%,white 100%);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        >h3{
+            font-size: 24px;
+            color: #2388ca;
+            line-height: 35px;
+            margin-bottom: 50px;
+        }
+        .agreement{
+            height:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 12px;
+            >i{
+                width:14px;
+                height:14px;
+                margin-right: 5px;
+            }
+            >span{
+                letter-spacing: 1px;
+                b{
+                    color: #2388CA;
+                }
+            }
+            
+        }
+        .ipt{
+            width:316px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            input{
+                width:250px;
+                height:50px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                margin-left: 10px;
+                text-indent: 20px;
+                font-size: 14px;
+                outline: 0 none;
+            }
+            .check{
+                width:250px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 10px;
+                border: 1px solid #ccc;
+                #checkIpt{
+                    width:148px;
+                    border: 0;
+                    margin-left: 0;
+                }
+                .get{
+                    display: inline-block;
+                    width:100px;
+                    height:50px;
+                    line-height: 50px;
+                    text-align: center;
+                    background: #f1f1f1;
+                    font-size: 14px;
+                    border-left: 1px solid #ccc;
+                }
+            }
+        }
+        
+        .loginBtn{
+            width:250px;
+            height:50px;
+            line-height: 50px;
+            text-align: center;
+            background: #2388CA;
+            color: #fff;
+            margin-top: 40px;
+        }
+    }
+    .right{
+        width:406px;
+        height:390px;
+    }
+  
+  
+}
+#footer{
+    max-width:1920px;
+    padding: 55px  0;
+    box-sizing: border-box;
+    color: #666;
+    border-top: 1px solid #ccc;
+    .footerWrap{
+        width:1200px;
+        margin: 0 auto;
+    }
+    >p{
+        width: 1200px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        margin: 0 auto;
+        >span{
+            font-size: 16px;
+            color: #333;
+            margin-right: 10px;
+        }
+    }
+}

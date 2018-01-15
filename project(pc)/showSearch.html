@@ -1,0 +1,217 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>查询列表</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/showSearch.css"/>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="tip">
+				<div class="tipBox">
+					<h4>提示信息</h4>
+					<p>提交成功，谢谢您的宝贵意见</p>
+					<div class="know">我知道了</div>
+				</div>	
+			</div>
+			<!--意见反馈、-->
+			<div class="modalBox">
+				<div class="modalContent">
+					<h4><i></i>意见反馈</h4>
+					<p>如果你对我们的网站有任何建议，或者在使用的过程中遇到任何问题都可以告诉我们</p>
+					<div class="text">
+						<textarea class="cText" name="" rows="" cols="" placeholder="请输入您的反馈意见"></textarea>
+						<span class="letterNum">还可以输入<i class="number">500</i>字</span>
+					</div>
+					<span class="pub right">发布</span>
+				</div>
+			</div>
+			<!--维修中取消订单-->
+			<div class="cancelBox repairingDel">
+				<div class="box">
+					<h4><i></i>请选择取消订单的原因(单选)</h4>
+					<ul>
+						<li><i class="active"></i><span>商家报价太高</span></li>
+						<li><i></i><span>商家维修原材料质量不高</span></li>
+						<li><i></i><span>商家距离我太远</span></li>
+						<li><i></i><span>其他原因</span></li>
+					</ul>
+					<p><i class="delete">取消</i><i class="again">重下一单</i><i class="sure">确定</i></p>
+				</div>
+			</div>
+			<!--未完成取消订单-->
+			<div class="cancelBox unfinishDel">
+				<div class="box">
+					<h4><i></i>请选择取消订单的原因(单选)</h4>
+					<ul>
+						<li><i class="active"></i><span>等待接单时间太长了</span></li>
+						<li><i></i><span>不想修了</span></li>
+					</ul>
+					<p><i class="delete">取消</i><i class="sure">确定</i></p>
+				</div>
+			</div>
+			<!--已完成删除订单-->
+			<div class="cancelBox finishDel">
+				<div class="box">
+					<h4>确定删除该维修订单</h4>
+					<p><i class="delete">取消</i><i class="sure">确定</i></p>
+				</div>
+			</div>
+			<div class="fixBox">
+				<a href="###"><i><img src="img/10_online.png"/></i><span>在线客服</span></a>
+				<a href="###"><i><img src="img/10_quick.png"/></i><span>快速下单</span></a>
+				<a href="###" class="opinion"><i><img src="img/10_yi.png"/></i><span>意见反馈</span></a>
+			</div>
+			<header id="header">
+				<nav>
+					<div class="logo">
+						<img src="img/1_logo.png"/>
+						<span>咻修</span>
+					</div>
+					<ul class="nav">
+						<li><a href="shouye.html">首页</a></li>
+						<li><a href="repair.html">手机维修</a></li>
+						<li><a href="problem.html">常见问题</a></li>
+						<!--<li><a href="###">服务流程</a></li>-->
+						<li><a href="order.html"   class="active">订单查询</a></li>
+					</ul>
+					<div class="enter">
+						<a href="###">登录</a>/<a href="###">注册</a>
+					</div>
+				</nav>
+				
+			</header>
+			<div id="content">
+				<div class="title"><span class="no"></span><h3>我的订单</h3><span><input class="search" type="text" placeholder="请输入订单号"/><i></i></span></div>
+				<div class="orderDetail">
+					<ul class="orderNav">
+						<li><i>订单编号</i></li>
+						<li><i>预约时间</i></li>
+						<li><i>维修商家</i></li>
+						<li><i>设备详情</i></li>
+						<li><i>订单状态</i></li>
+						<li><i>详情</i></li>
+					</ul>
+					<dl>
+						<dt>
+							<ul>
+								<li><i>12343545</i></li>
+								<li><i>2017-7-31 15:00</i></li>
+								<li><i>天天科技</i></li>
+								<li><i>苹果</i></li>
+								<li><i>已完成</i></li>
+								<li class="open"><i></i></li>
+							</ul>
+						</dt>
+						<dd>
+							<ul>
+								<li><i>设备信息</i><span>苹果 iPhone 6S plus 玫瑰金</b></span></li>
+								<li><i>设备故障</i><span>内屏碎</b></span></li>
+								<li><i>维修项目</i><span>更换内屏</b></span></li>
+								<li><i>报价</i><span>&yen;<b>370</b></b></span></li>
+								<li><i>维修商家</i><span>天天科技</span></li>
+								<li><i>联系电话</i><span>13487562545</span></li>
+								<li><i>订单操作</i><span><strong class="operation finishBtn">删除订单</strong></span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<ul>
+								<li><i>12343545</i></li>
+								<li><i>2017-7-31 15:00</i></li>
+								<li><i>天天科技</i></li>
+								<li><i>苹果</i></li>
+								<li><i>未完成</i></li>
+								<li class="open"><i></i></li>
+							</ul>
+						</dt>
+						<dd>
+							<ul>
+								<li><i>设备信息</i><span>苹果 iPhone 6S plus 玫瑰金</b></span></li>
+								<li><i>设备故障</i><span>内屏碎</b></span></li>
+								<li><i>维修项目</i><span>更换内屏</b></span></li>
+								<li><i>报价</i><span>&yen;<b>370</b></b></span></li>
+								<li><i>维修商家</i><span>天天科技</span></li>
+								<li><i>联系电话</i><span>13487562545</span></li>
+								<li><i>订单操作</i><span><strong class="operation unfinishBtn">取消订单</strong></span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<ul>
+								<li><i>12343545</i></li>
+								<li><i>2017-7-31 15:00</i></li>
+								<li><i>天天科技</i></li>
+								<li><i>苹果</i></li>
+								<li><i>维修中</i></li>
+								<li class="open"><i></i></li>
+							</ul>
+						</dt>
+						<dd>
+							<ul>
+								<li><i>设备信息</i><span>苹果 iPhone 6S plus 玫瑰金</b></span></li>
+								<li><i>设备故障</i><span>内屏碎</b></span></li>
+								<li><i>维修项目</i><span>更换内屏</b></span></li>
+								<li><i>报价</i><span>&yen;<b>370</b></b></span></li>
+								<li><i>维修商家</i><span>天天科技</span></li>
+								<li><i>联系电话</i><span>13487562545</span></li>
+								<li><i>订单操作</i><span><strong class="operation repairingBtn">取消订单</strong></span></li>
+							</ul>
+						</dd>
+					</dl>
+					
+					
+					<div class="showAll"><i>已显示全部</i></div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div class="footerWrap">
+					<div class="top">
+						<div class="line"></div>
+						<div class="left">
+							<ul>
+								<li><a href="###">帮助中心</a></li>
+								<li><a href="###">常见问题</a></li>
+								<li><a href="###">服务协议</a></li>
+							</ul>
+							<ul>
+								<li><a href="###">咻修</a></li>
+								<li><a href="###">关于我们</a></li>
+								<li><a href="###">加入我们</a></li>
+								<li><a href="###" class="entry">维修商入口</a></li>
+							</ul>
+							<ul>
+								<li><a href="###">关注我们</a></li>
+								<li><a href="###">app下载</a></li>
+								<li><a href="###">微信公众号</a></li>
+								<li><a href="###">新浪微博</a></li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="Rleft">
+								<span>工作时间:周一至周六</span>
+								<i>10:00-22:00</i>
+								<span>客服在线:4001-0000-8888</span>
+							</div>
+							<div class="Rright">
+								<img src="img/10_er.png"/>
+								<i>微信公众号</i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p>版权所有&copy;地址:广东省广州市白云区M8创意园A栋401c  020-81010418 粤ICP备16052260号-2</p>
+			</footer>
+			
+			
+			<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+			<script type="text/javascript" src="js/swiper.js"></script>
+			<script type="text/javascript" src="js/common.js"></script>
+			<script type="text/javascript">
+			</script>
+		</div>
+	</body>
+</html>

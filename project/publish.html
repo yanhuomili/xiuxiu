@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>解决疑难</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/publish.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<header id="header">
+				<i class="goBack"><em>解决疑难</em></i><span>发布问题</span><b></b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<div class="title">
+					<i></i>
+					<input name="" rows="" placeholder="标题"></input>
+				</div>
+				<div class="brank">
+					<p><i></i><span>请选择手机品牌</span></p>
+					<b></b>
+				</div>
+				<div class="text">
+					<i></i>
+					<textarea name="50" rows="50" placeholder="请描述您的手机故障"></textarea>
+					<span class="tip"><em class="num">0</em><b>/500</b></span>
+				</div>
+				<div class="publishBtn">发布</div>
+			</section>
+			
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('textarea').focus(function(){
+					$(this).text('');
+				})
+				
+				//输入框字数提示
+				$('textarea').bind('input propertychange',function(){
+					var n=$(this).val().length
+					$('.num').text(n);
+				})
+			})
+		</script>
+	</body>
+</html>

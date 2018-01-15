@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box img{
+				width: 200px;height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jiaz"></div>
+			<div class="box">
+				<!--<img src="http://120.76.191.98:8080/shop/20161103/1478173263092.jpg"/>
+				<img src="http://120.76.191.98:8080/shop/20161204/1480812289227.jpg"/>
+				<img src="http://120.76.191.98:8080/shop/20161113/1479032526734.jpg"/>
+				<img src="http://120.76.191.98:8080/shop/20161211/1481426548666.jpg"/>
+				<img src="http://120.76.191.98:8080/shop/20161211/1481454005259.jpg"/>-->
+				<!--<img src="http://120.76.191.98:8080/shop/20161128/1480314282789.jpg"/>-->
+			</div>
+		<input type="button" name="btn" id="btn" value="点击加载" />
+			
+			
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			var arr=['http://120.76.191.98:8080/shop/20161103/1478173263092.jpg',
+				'http://120.76.191.98:8080/shop/20161204/1480812289227.jpg',
+				'http://120.76.191.98:8080/shop/20161113/1479032526734.jpg',
+				'http://120.76.191.98:8080/shop/20161211/1481426548666.jpg',
+				'http://120.76.191.98:8080/shop/20161211/1481454005259.jpg',
+				'http://120.76.191.98:8080/shop/20161128/1480314282789.jpg'
+				]
+			var n=0;
+			var len=arr.length;
+			prend();
+			function prend(){
+				var Img=new Image();
+				Img.src=arr[n];
+				$('.box').append('<img src="'+arr[n]+'"/>');
+				Img.onload=function(){
+					if(n>=len){
+						return;
+					}else{
+						prend();
+					}
+				}
+				n++;
+				$('.jiaz').text(((n/len)*100).toFixed(2)+"%");
+			}
+			
+			
+			
+			//全局函数,地理位置获取成功后的回调函数
+			function renderReverse(data) {
+				alert(data)
+				alert(data.result.addressComponent.city);
+				console.log(data);
+				console.log(data.result.addressComponent.city);//当前地理位置所在的城市
+				$('#btn').val('点击获取')
+			}
+			var btn = document.getElementById('btn');
+			btn.onclick = function() {
+				console.log(123)
+				//创建script标签并且放到文档中；
+				getLocation();
+				function getLocation() {
+					$('#btn').val('正在获取地理位置');
+					console.log(12)
+					if(navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+					} else {
+						alert('浏览器不支持该api')
+					}
+				}
+				function showPosition(position) {//23.149415,113.257291
+					var loca=position.coords.latitude +"," + position.coords.longitude;
+					console.log(loca)
+					var oS = document.createElement('script'); //http://m.amap.com/navi/?start=113.268586,22.987472&dest=113.283451,23.211301&destName=广州南&naviBy=bus&key=a8d0f3dd2ce8b6461707cc03452bf18e
+					oS.src = 'http://api.map.baidu.com/geocoder/v2/?callback=renderReverse&location='+loca+'&output=json&pois=1&ak=110465c9433ffc5a729fb32dac67bd94';
+					document.getElementsByTagName('head')[0].appendChild(oS);
+					document.getElementsByTagName('head')[0].removeChild(oS); //数据加载完成后马上删除script标签
+				}
+				
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

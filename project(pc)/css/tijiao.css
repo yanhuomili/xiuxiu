@@ -1,0 +1,47 @@
+#wrap { max-width: 1920px; margin: 0 auto; background: #f1f1f1; }
+
+a:hover { text-decoration: none !important; }
+
+#header { max-width: 1920px; min-width: 1200px; height: 90px; border-bottom: 1px solid #ccc; box-sizing: border-box; background: #fff; }
+#header nav { width: 1200px; height: 90px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0 auto; }
+#header nav .logo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#header nav .logo > img { width: 50px; height: 50px; margin-right: 5px; }
+#header nav .logo > span { font-size: 36px; letter-spacing: 5px; }
+#header nav .mainNav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#header nav .mainNav li { padding: 0 25px; }
+#header nav .mainNav li a { font-size: 18px !important; color: #000; }
+#header nav .mainNav li .active { color: #2388ca; }
+#header nav .enter { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; color: #2388CA; font-size: 16px; }
+#header nav .enter a { color: #2388CA; }
+
+#content { width: 100%; background: #fff; padding: 30px 0 60px 0; box-sizing: border-box; overflow: hidden; }
+#content .orderInfo { width: 1200px; height: 700px; margin: 0 auto; border: 1px dashed #f1f1f1; padding: 280px 0 0 240px; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; color: #333; }
+#content .orderInfo .left { width: 86px; height: 100px; }
+#content .orderInfo .right { margin-left: 20px; }
+#content .orderInfo .right h3 { font-size: 24px; margin-bottom: 20px; }
+#content .orderInfo .right > div { margin-bottom: 20px; }
+#content .orderInfo .right > div .yugu { color: #f60; margin-left: 30px; }
+#content .orderInfo .right .see { display: inline-block; width: 200px; height: 60px; line-height: 60px; text-align: center; background: #f60; color: #fff; border-radius: 10px; margin: 80px 0 0 170px; }
+
+#footer { max-width: 1920px; height: 275px; padding: 50px 25px 40px 0; box-sizing: border-box; color: #333; background: #f1f1f1; }
+#footer .footerWrap { width: 1200px; margin: 0 auto; }
+#footer .top { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; position: relative; }
+#footer .top .line { width: 3px; height: 100px; position: absolute; top: 0; left: 670px; z-index: 5; background: url(../img/line.jpg) no-repeat center center; }
+#footer .top .left { width: 560px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#footer .top .left > ul { width: 80px; }
+#footer .top .left > ul li { font-size: 16px; margin-bottom: 10px; }
+#footer .top .left > ul li a { color: #666; }
+#footer .top .left > ul li:first-child a { color: #333; }
+#footer .top .right { width: 420px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#footer .top .right .Rleft { width: 200px; font-size: 16px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+#footer .top .right .Rleft > i { padding-left: 70px; margin: 10px 0 20px; }
+#footer .top .right .Rright { width: 110px; }
+#footer .top .right .Rright > img { width: 110px; height: 110px; }
+#footer .top .right .Rright > i { display: inline-block; width: 110px; text-align: center; margin-top: 10px; }
+#footer > p { width: 1200px; text-align: center; margin-top: 20px; font-size: 14px; margin: 0 auto; }
+
+.btn-default { width: 300px; }
+
+.btn-default:hover { background: #fff !important; }
+
+.dropdown-menu { width: 300px; }

@@ -1,0 +1,19 @@
+.header { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #19a5ff; font-size: 0.4rem; margin-top: 1.7rem; }
+.header .logo { width: 1.6rem; height: 1.6rem; background: url(../img/login_logo.png) no-repeat center center; background-size: 1.6rem; }
+
+#content { width: 100%; }
+#content .info { width: 100%; padding: 0.6rem 0.5rem 0.8rem; box-sizing: border-box; }
+#content .info li { width: 100%; height: 1rem; box-sizing: border-box; border-bottom: 0.01rem solid #1ba6fe; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .info li i { display: inline-block; width: 1rem; height: 1rem; background-size: 0.48rem 0.52rem !important; }
+#content .info li input { height: 0.4rem; font-size: 0.32rem; outline: 0 none; border: 0; border-left: 0.01rem solid #1ba6fe; text-indent: 0.42rem; }
+#content .info li .checkCode { width: 3rem; }
+#content .info li .sendCode { width: 2.2rem; height: 0.4rem; text-align: center; border-left: 0.01rem solid #1ba6fe; }
+#content .info li:nth-of-type(1) i { background: url(../img/login_person.png) no-repeat center center; }
+#content .info li:nth-of-type(2) i { background: url(../img/login_number.png) no-repeat center center; }
+#content .info li:nth-of-type(3) i { background: url(../img/login_password.png) no-repeat center center; }
+
+#footer { width: 100%; }
+#footer .loginBtn { width: 6.5rem; height: 0.8rem; line-height: 0.8rem; text-align: center; background: #1ba6fe; color: #fff; font-size: 0.34rem; margin: 0 auto; border-radius: 0.06rem; }
+#footer p { height: 0.4rem; margin-top: 0.56rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+#footer p a { padding: 0 0.5rem; color: #666; }
+#footer p .registerNow { border-right: 0.01rem solid #1aa6fe; }

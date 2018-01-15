@@ -1,0 +1,14 @@
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 0.3rem; color: #666; background: #fff; border-bottom: 0.01rem solid #ccc; }
+#header i { width: 0.6rem; height: 100%; background: url(../img/success_return.png) no-repeat 0 center; background-size: 0.18rem 0.32rem; }
+#header b { width: 0.6rem; height: 100%; }
+
+#content { width: 100%; padding: 0 0.2rem; box-sizing: border-box; }
+#content dl { width: 100%; padding: 0.3rem 0; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border-bottom: 0.01rem solid #eee; }
+#content dl dt { width: 2rem; height: 1.5rem; margin-right: 0.3rem; }
+#content dl dd { width: 4.75rem; font-size: 0.24rem; }
+#content dl dd h3 { font-size: 0.3rem; }
+#content dl dd p { margin: 0.15rem 0; }
+#content dl dd div { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#content dl dd div span { color: #999; }
+#content dl dd div i { color: #2388ca; }
+#content .loadMore { display: block; width: 100%; margin-top: 0.8rem; text-align: center; font-size: 0.24rem; }

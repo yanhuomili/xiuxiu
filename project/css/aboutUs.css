@@ -1,0 +1,16 @@
+body { font-size: 0.28rem; }
+
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 0.3rem; color: #666; background: #fff; }
+#header i { width: 0.6rem; height: 100%; background: url(../img/success_return.png) no-repeat left center; background-size: 0.18rem 0.32rem; }
+#header b { width: 0.6rem; height: 100%; }
+
+#content { width: 100%; max-height: 100rem; padding: 0 0.2rem; box-sizing: border-box; border-top: 0.01rem solid #ccc; }
+#content div { padding-bottom: 0.7rem; }
+#content h2 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: 0.8rem; color: #333; border-bottom: 0.01rem solid #ccc; margin-bottom: 0.25rem; }
+#content h2 i { width: 0.08rem; height: 0.4rem; margin-right: 0.2rem; background: url(../img/about_around.png) no-repeat center center; background-size: 0.08rem 0.4rem; }
+#content p { padding: 0 0.25rem; box-sizing: border-box; margin-bottom: 0.2rem; font-size: 0.24rem; color: #666; line-height: 2; text-indent: 0.25rem; }
+#content h6 { padding: 0 0.25rem; font-size: 0.24rem; color: #666; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+#content h6 i { margin: 0.1rem 0; }
+#content h6 span { margin-top: 0.4rem; }
+#content h5 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 0 0.25rem; box-sizing: border-box; color: #666; margin-bottom: 0.3rem; }
+#content h5 i { line-height: 1.8; }

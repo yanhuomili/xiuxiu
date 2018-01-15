@@ -1,0 +1,44 @@
+body { font-size: 0.28rem; background: #f1f1f1; }
+
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 0.3rem; color: #666; background: #fff; border-bottom: 0.01rem solid #ccc; }
+#header i { width: 0.6rem; height: 100%; background: url(../img/success_return.png) no-repeat left center; background-size: 0.18rem 0.32rem; }
+#header b { width: 0.6rem; height: 100%; }
+
+.headerFill { margin-bottom: 0.1rem; }
+
+#content .top { height: 0.8rem; background: #fff; color: #333; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .top > li { width: 1.7rem; height: 100%; border-top: 0.03rem solid transparent; border-bottom: 0.01rem solid #ccc; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .top > li p { width: 100%; height: 0.6rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border-right: 0.01rem solid #f1f1f1; }
+#content .top > li p i { width: 0.18rem; height: 0.12rem; margin-left: 0.1rem; background: url(../img/1_square.png) no-repeat center center; background-size: 0.18rem 0.12rem; }
+#content .top > li p .bgcActive { background: url(../img/2_square.png) no-repeat center center; background-size: 0.18rem 0.12rem; }
+#content .top .active { border-top-color: #ff6600; border-bottom-color: transparent; border-left: 0.01rem solid #f1f1f1; border-right: 0.01rem solid #f1f1f1; }
+#content .top .second { width: 2.4rem; }
+#content .top li:last-child p { border-right: 0; }
+#content .detail { background: #fff; color: #666; }
+#content .detail li { height: 0.8rem; padding: 0 0.5rem 0 0.58rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .detail li p { color: #fe6600; }
+#content .detail li:nth-of-type(even) { background: #f1f1f1; }
+#content .loadMore { color: #ff6600; font-size: 0.24rem; margin-top: 0.6rem; text-align: center; }
+
+.grayLayout { width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.5); position: fixed; top: 1.9rem; display: none; }
+.grayLayout .pinpai, .grayLayout .xinghao { position: absolute; top: 0; padding: 0.1rem 0.2rem 0.9rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; color: #666; background: #fff; }
+.grayLayout .pinpai dt, .grayLayout .xinghao dt { width: 2.2rem; height: 0.8rem; margin-bottom: 0.2rem; line-height: 0.8rem; text-align: center; background: #f1f1f1; }
+.grayLayout .pinpai .active, .grayLayout .xinghao .active { background: #ff6600; color: #fff; }
+.grayLayout .guzhang { width: 100%; position: absolute; top: 0; color: #666; background: #ccc; }
+.grayLayout .guzhang dt { height: 0.81rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.grayLayout .guzhang dt p { width: 2.5rem; height: 100%; background: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.grayLayout .guzhang dt p .gt { display: inline-block; width: 0.12rem; height: 0.22rem; }
+.grayLayout .guzhang dt b { width: 5rem; height: 100%; padding: 0 0.2rem 0 0.4rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #f1f1f1; }
+.grayLayout .guzhang dt:first-child { color: #f60; background: #f1f1f1; }
+.grayLayout .guzhang > .problemType { width: 100%; height: 100%; position: relative; }
+.grayLayout .guzhang > .problemType > li { width: 2.5rem; height: 0.81rem; line-height: 0.8rem; text-align: center; background: #fff; border-top: 0.01rem solid #ccc; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-right: 0.08rem; box-sizing: border-box; }
+.grayLayout .guzhang > .problemType > li > em { width: 0.12rem; height: 0.22rem; }
+.grayLayout .guzhang > .problemType > li .emActive { background: url(../img/8_arr.png) no-repeat center center; background-size: 0.12rem 0.22rem; }
+.grayLayout .guzhang > .problemType > li:first-child { border-top-color: transparent; }
+.grayLayout .guzhang > .problemType .active { background: #f1f1f1; color: #f60; }
+.grayLayout .guzhang .problemDetail { width: 5rem; position: absolute; top: 0; left: 2.5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+.grayLayout .guzhang .problemDetail > li { padding: 0 0.2rem 0 0.4rem; background: #f1f1f1; height: 0.81rem; border-top: 0.01rem solid #ccc; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.grayLayout .guzhang .problemDetail > li > em { width: 0.21rem; height: 0.16rem; }
+.grayLayout .guzhang .problemDetail > li .yesActive { background: url(../img/9_yes.png) no-repeat center center; background-size: 0.21rem 0.16rem; }
+.grayLayout .guzhang .problemDetail > li:first-child { border-top-color: transparent; }
+.grayLayout .guzhang .problemDetail .wordActive { color: #f60; }

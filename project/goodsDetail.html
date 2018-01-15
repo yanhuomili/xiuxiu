@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goodsDetail.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	</head>
+	<body>
+		<section id="content">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="img/good-banner.png"/></div>
+			        <div class="swiper-slide"><img src="img/good-banner.png"/></div>
+			        <div class="swiper-slide"><img src="img/good-banner.png"/></div>
+			        <div class="swiper-slide"><img src="img/good-banner.png"/></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+			<div class="some">
+				<p class="phone-text">
+					快速双USB充电器iphone7苹果6 6S手机骨灰盒
+					5s安卓通用2A只能插头
+				</p>
+				<p class="number">
+					<em>&yen;</em><i class="n">59.9</i>/ 件
+				</p>
+				<div class="express">
+					<p>快递:<span class="price">0.00</span></p>
+					<p>已售<span>256</span>件</p>
+					<p>发货地：<span class="place">广州</span></p>
+				</div>
+				<div class="bot">
+					<p><i><img src="img/tuihuo.png"/></i><span>七天退货</span></p>
+					<p><i><img src="img/jifen.png"/></i><span>购买赠送<em>200</em>积分</span></p>
+					
+				</div>
+			</div>
+			<div class="xinxun">
+				<dl>
+					<dt><img src="img/xinxun.png"/></dt>
+					<dd>
+						<p>sunshine新讯</p>
+						<p><img src="img/zuanshi.png"/></p>
+					</dd>
+				</dl>
+				<ul>
+					<li><i>67</i><span>全部商品</span></li>
+					<li><i>627</i><span>已售商品</span></li>
+					<li><i>1627</i><span>关注人数</span></li>
+				</ul>
+			</div>
+			<div class="comment">
+				<h2><em></em><p>评论</p><em></em></h2>
+				<div class="com-info">
+					<div class="comment-num">
+						<p>宝贝评价 （<i>152</i>）</p>
+						<p>好评<span>98%</span><em><img src="img/right.png"/></em></p>
+					</div>
+					<dl>
+						<dt>
+							<img src="img/touxiang.png"/>
+							<p>我是英雄</p>
+						</dt>
+						<dd>
+							<i><img src="img/xing.png"/></i>
+							<i><img src="img/xing.png"/></i>
+							<i><img src="img/xing.png"/></i>
+							<i><img src="img/xing.png"/></i>
+							<i><img src="img/xing.png"/></i>
+						</dd>
+					</dl>
+					<p class="text">这件商品还没有用过，但是手感很好，店主很用心还送了个小礼物，店主很用心还送了个小礼物</p>
+					<div class="date">
+						<p>
+							<em>产品分类：</em>
+							<i>充电头</i>
+						</p>
+						<p>2017-10-19</p>
+					</div>
+				</div>
+			</div>
+			<div class="tuwenxiangqing">
+				<h2><em></em><p>图文详情</p><em></em></h2>
+				<div class="tu">
+					<ul>
+						<li>图文详情</li>
+					</ul>
+					<div class="container">
+						<img src="img/tu.png"/>
+						<img src="img/tu.png"/>
+						<img src="img/tu.png"/>
+					</div>
+				</div>
+			</div>
+			<button class="download">下载</button>
+		
+		</section>	
+			
+		
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var deviceAgent = window.navigator.userAgent.toLowerCase(); 
+				 var agentID = deviceAgent.match(/(iphone|ipod|ipad|android)/); 
+				 console.log(agentID)
+				 if(agentID.indexOf("iphone")>=0){ 
+//				  alert("iphone"); 
+				 } 
+				 if(agentID.indexOf("ipod")>=0){ 
+				  alert("ipod"); 
+				 } 
+				 if(agentID.indexOf("ipad")>=0){ 
+				  alert("ipad"); 
+				 } 
+				 if(agentID.indexOf("android")>=0){ 
+				  alert("android"); 
+				 } 
+				
+				
+				
+				var myswiper = new Swiper ('.swiper-container', {
+				    direction: 'horizontal',
+				    loop: true,
+				    autoplay:2000,
+				    // 如果需要分页器
+				    pagination: '.swiper-pagination',
+				}) 
+				
+				
+				
+				
+			})
+		</script>
+	</body>
+</html>

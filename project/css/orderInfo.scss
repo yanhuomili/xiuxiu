@@ -1,0 +1,191 @@
+@charset "utf-8";
+body{
+    font-size: 0.28rem;
+    background:#f1f1f1;
+}
+#header{
+    width:100%;
+    height:1rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.3rem;
+    color: #666;
+    background:#fff;
+    border-bottom: 0.01rem solid #ccc;
+    i{
+        width:0.6rem;
+        height:100%;
+        background: url(../img/success_return.png) no-repeat left center;
+        background-size: 0.18rem 0.32rem;
+    }
+    b{
+        width:0.6rem;
+        height:100%;
+    }
+}
+.headerFill{
+    margin-bottom: 0.1rem;
+}
+#content{
+   .information{
+       margin-bottom: 0.45rem;
+       padding: 0.3rem;
+       box-sizing: border-box;
+       color: #333;
+       li{
+           height:0.8rem;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           margin: 0.1rem 0;
+           i{
+               font-size: 0.3rem;
+           }
+           p,{
+               width:5.2rem;
+               height:100%;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background: #fff;
+               padding: 0 0.1rem 0 0.2rem;
+               box-sizing: border-box;
+               border-radius: 0.06rem;
+               color: #999;
+               .getCode{
+                   width:1.8rem;
+                   height:0.64rem;
+                   line-height: 0.64rem;
+                   text-align: center;
+                   background: #f1f1f1;
+               }
+               input{
+                   height:80%;
+                   font-size: 0.28rem;
+                   border: 0;
+                   outline: 0 none;
+               }
+               b{
+                   margin-right: 2.8rem;
+               }
+           }
+           #data{
+               width:5.2rem;
+               height:100%;
+               padding: 0 0.1rem 0 0.2rem;
+               box-sizing: border-box;
+               border-radius: 0.06rem;
+               outline: 0 none;
+               border: 0;
+               font-size: 0.28rem;
+           }
+       }
+   }
+}
+///*朦胧层*/
+//.grayLayout{
+//  width:100%;
+//  height:100vh;
+//  position: fixed;
+//  top: 0;
+//  background: rgba(0,0,0,0.5);
+//  z-index: 5;
+//  display: none;
+//  ul{
+//      width:5.4rem;
+//      background: #fff;
+//      position: absolute;
+//      top: 50%;
+//      left: 50%;
+//      transform: translate(-50%,-50%);
+//      z-index: 6;
+//      border-radius: 0.1rem;
+//      color: #666;
+//      overflow: hidden;
+//      li{
+//          width:100%;
+//          height:1rem;
+//          padding: 0 0.4rem 0 0.45rem;
+//          box-sizing: border-box;
+//          border-bottom: 0.01rem solid #eee;
+//          display: flex;
+//          justify-content: space-between;
+//          align-items: center;
+//          p{
+//              display: flex;
+//              align-items: center;
+//             i{
+//                  width:0.34rem;
+//                  height:0.34rem;
+//                  margin-right: 0.25rem;
+//                  border: 0.01rem solid #ccc;
+//                  border-radius: 50%;
+//                  box-sizing: border-box;
+//              } 
+//              .active{
+//                  background: url(../img/8_precircle.png) no-repeat center center;
+//                  background-size: 0.34rem;
+//              }
+//          }
+//          b{
+//              color: #ff6600;
+//              i{
+//                  margin-left: 0.08rem;
+//              }
+//          }
+//      }
+//      .lastLi{
+//          width:100%;
+//          font-size: 0.3rem;
+//          padding: 0 !important;
+//          border-bottom: 0;
+//          background: #f1f1f1;
+//          span{
+//              width:50%;
+//              height:100%;
+//              line-height: 1rem;
+//              text-align: center;
+//          }
+//          .cancel{
+//              border-right: 0.01rem solid #ccc;
+//          }
+//          .active{
+//              background: #ff6700;
+//              color: #fff;
+//          }
+//      }
+//      .problem{
+//          display: flex;
+//          justify-content: center;
+//          font-size: 0.3rem;
+//      }
+//  }
+//}
+
+/*下一步按钮*/
+.next{
+    width:100%;
+    height:1.2rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        width:100%;
+        height:0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        background: #ccc;
+        color: #fff;
+        border-radius: 0.06rem;
+        background: #ff6600;
+    }
+}
+
+#footer{
+   
+}

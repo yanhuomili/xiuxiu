@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拆机视频</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chaiji.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<header id="header">
+				<i class="goBack"><em></em></i><span>拆机视频</span><b></b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<!--<ul class="topNav">
+					<li class="huawei active">新手学堂</li>
+					<li class="apple">高手进阶</li>
+					<li class="sam">手机周边</li>
+					<li class="meizu">维修视频</li>
+				</ul>
+				<div class="fill"></div>-->
+				<div class="list">
+					<div class="shipin">
+						<dl>
+							<dt>
+								<img src="img/ar_pic1.png"/>
+								<video width="" height="">
+									<source src="myvideo.mp4" type="video/mp4"></source>
+									<source src="myvideo.ogv" type="video/ogg"></source>
+									<source src="myvideo.webm" type="video/webm"></source>
+								</video>
+								<b><img src="img/2_bofang-.png"/></b>
+							</dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<!--<img src="img/ar_pic1.png"/>-->
+								<video width="" height="">
+									<source src="myvideo.mp4" type="video/mp4"></source>
+									<source src="myvideo.ogv" type="video/ogg"></source>
+									<source src="myvideo.webm" type="video/webm"></source>
+								</video>
+								<b><img src="img/2_bofang-.png"/></b>
+							</dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<img src="img/ar_pic1.png"/>
+								<video width="" height="">
+									<source src="myvideo.mp4" type="video/mp4"></source>
+									<source src="myvideo.ogv" type="video/ogg"></source>
+									<source src="myvideo.webm" type="video/webm"></source>
+								</video>
+								<b><img src="img/2_bofang-.png"/></b>
+							</dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				
+				$('.topNav li').click(function(){
+					var index=$(this).index();
+					$(this).addClass('active').siblings().removeClass('active');
+					$('.list >div').eq(index).show().siblings().hide();
+				})
+//				var len=$('dd p').text().length;
+//				var val=$('dd p').text().substr(0,45)+"...";
+				$('dd p').each(function(index,el){
+					if($(this).text().length>45){
+						var val=$(this).text().substr(0,45)+"...";
+						$(this).text(val);
+					}
+					
+				})
+				
+				
+			})
+		</script>
+	</body>
+</html>

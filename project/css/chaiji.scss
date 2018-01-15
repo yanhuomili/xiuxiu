@@ -1,0 +1,107 @@
+@charset "utf-8";
+body{
+    background: #f1f1f1;
+}
+#header{
+    width:100%;
+    height:1rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    background:#fff;
+    position: fixed;
+    top: 0;
+    border-bottom: .01rem solid #ccc;
+    i{
+        width:1.2rem;
+        height:100%;
+        display: flex;
+        align-items: center;
+        background: url(../img/success_return.png) no-repeat left center;
+        background-size: 0.22rem 0.38rem;
+        em{
+            margin-left: .3rem !important;
+        }
+    }
+    span{
+        font-size: 0.32rem;
+    }
+    b{
+        width:1.2rem;
+        height:100%;
+        background: url(../img/9_search.png) no-repeat right center;
+        background-size: .38rem;
+    }
+}
+.headerFill{
+    height: 1rem !important;
+}
+#content{
+   .fill{
+       width:100%;
+       height:.8rem;
+   }
+   .list{
+       >div{
+           width:100%;
+           height:100%;
+           letter-spacing: .01rem;
+           dl{
+               width: 100%;
+               padding: .4rem .3rem .3rem;
+               box-sizing: border-box;
+               margin-bottom: .1rem;
+               background: #fff;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               dt{
+                   width:2rem;
+                   height:2rem;
+                   position: relative;
+                   video{
+                       width:2rem;
+                       height: 2rem;
+                       position: absolute;
+                       top: 0;
+                   }
+                   b{
+                       width:.6rem;
+                       height:.6rem;
+                       position: absolute;
+                       top: 50%;
+                       left: 50%;
+                       transform: translate(-50%,-50%);
+                   }
+               }
+               dd{
+                   width:4.5rem;
+                   h4{
+                       font-size: .3rem;
+                       color: #333;
+                       text-overflow: ellipsis;
+                       overflow: hidden;
+                       white-space: nowrap;
+                   }
+                   p{
+                       color: #999;
+                       height: 1.2rem;
+                       overflow: hidden;
+                       line-height: 1.4;
+                       margin-top: .2rem;
+                       margin-bottom: .15rem;
+                   }
+                   >div{
+                       color: #999;
+                       font-size: .2rem;
+                       display: flex;
+                       justify-content: space-between;
+                   }
+               }
+           }
+       }
+   }
+}

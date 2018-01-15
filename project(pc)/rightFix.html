@@ -1,0 +1,141 @@
+<div class="tip">
+	<div class="tipBox">
+		<h4>提示信息</h4>
+		<p>提交成功，谢谢您的宝贵意见</p>
+		<div class="know">我知道了</div>
+	</div>	
+</div>
+<!--意见反馈、-->
+<div class="modalBox">
+	<div class="modalContent">
+		<h4><i></i>意见反馈</h4>
+		<p>如果你对我们的网站有任何建议，或者在使用的过程中遇到任何问题都可以告诉我们</p>
+		<div class="text">
+			<textarea class="cText" name="" rows="" cols="" placeholder="请输入您的反馈意见"></textarea>
+			<span class="letterNum">还可以输入<i class="number">500</i>字</span>
+		</div>
+		<span class="pub right">发布</span>
+	</div>
+</div>
+<style type="text/css">
+	.tip {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background: #969696;
+  text-align: center;
+  display: none;
+}
+.tip .tipBox {
+  width: 500px;
+  height: 240px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+.tip .tipBox h4 {
+  font-size: 22px;
+  line-height: 90px;
+  color: #f60;
+  margin: 0 !important;
+}
+.tip .tipBox p {
+  line-height: 90px;
+  font-size: 18px !important;
+}
+.tip .tipBox .know {
+  border-top: 1px solid #eee;
+  color: #999;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 18px !important;
+}
+
+.modalBox {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: #969696;
+  color: #333;
+}
+.modalBox .modalContent {
+  width: 800px;
+  height: 600px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 55px 50px 20px;
+  box-sizing: border-box;
+}
+.modalBox .modalContent h4 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.modalBox .modalContent h4 i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #2386c7;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+.modalBox .modalContent p {
+  padding-left: 35px;
+  box-sizing: border-box;
+  color: #666;
+  letter-spacing: 2px;
+  line-height: 2;
+  font-size: 18px !important;
+}
+.modalBox .modalContent .text {
+  width: 100%;
+  height: 320px;
+  padding-left: 35px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 10px;
+}
+.modalBox .modalContent .text textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background: #f1f1f1;
+  border: 0;
+  outline: 0 none;
+  font-size: 18px;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+  color: #333;
+  letter-spacing: 1px;
+}
+.modalBox .modalContent .text .letterNum {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #f60;
+}
+.modalBox .modalContent .pub {
+  display: inline-block;
+  width: 170px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #f60;
+  color: #fff;
+  font-size: 22px;
+  margin-top: 20px;
+}
+</style>

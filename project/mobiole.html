@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jqmobile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<style type="text/css">
+			i, em, b, strong, mark { font-style: normal;font-weight: normal; }
+			.header{
+				
+			}
+			.swiper-wrapper img{
+				width: 100%;
+				height: auto;
+			}
+			
+			
+			
+			
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header" class="header">
+				<h1>首页</h1>
+			</div>
+			<div data-role="content">
+				<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="img/banner1.jpg"/></div>
+			        <div class="swiper-slide"><img src="img/banner1.jpg"/></div>
+			        <div class="swiper-slide"><img src="img/banner1.jpg"/></div>
+			        <div class="swiper-slide"><img src="img/banner1.jpg"/></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+				
+				
+			</div>
+			
+			
+			<div data-role="footer">
+				<h1>这是页面的底部</h1>
+			</div>
+		</div>
+		
+		
+		<!--<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		
+		<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script type="text/javascript">
+			var myswiper = new Swiper ('.swiper-container', {
+				    direction: 'horizontal',
+				    loop: true,
+				    autoplay:2000,
+				    // 如果需要分页器
+				    pagination: '.swiper-pagination',
+				}) 
+		</script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天天科技</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/yuyue.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shijian.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<header id="header">
+				<i class="goBack"><em></em></i><span>天天科技</span><b></b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<div class="repairItem">
+					<h2><i></i><span style="font-size: .26rem;">项目维修</span></h2>
+					<div class="list">
+						<dl>
+							<dt><i>苹果</i><i class="long">iPhone6s</i><i>外屏碎</i><i>￥370</i><b></b></dt>
+							<dd>更换外屏</dd>
+						</dl>
+						<dl>
+							<dt><i>苹果</i><i class="long">iPhone6s</i><i>外屏碎</i><i>￥370</i><b></b></dt>
+							<dd>更换外屏</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="describe">
+					<h2><i></i><span style="font-size: .26rem;">故障描述</span></h2>
+					<textarea placeholder="请描述一下您的手机故障" rows="" cols=""></textarea>
+				</div>	
+				<ul class="info">
+					<li><i></i><input type="text" name="" class="ip1" placeholder="填写联系人姓名" /></li>
+					<li><i></i><input type="text" name="" class="ip1" placeholder="请填写您的手机号码" /></li>
+					<li class="last">
+						<span class="sp1">到店日期</span>
+						<p><input type="text" class="" id="T1" date="2017-8-11" /><b></b></p>
+					</li>
+					<li class="last">
+						<span class="sp2">具体时间</span>
+						<p><input type="text" class="" id="T2" date="9:00" /><b></b></p>
+					</li>
+				</ul>
+			</section>
+			<style type="text/css">
+				.box img{
+					width: 2rem;
+					height: 2rem;
+				}
+			</style>
+			
+			<section class="footer">
+				<span class="sure">确定预约</span>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquer_shijian.js"></script>		
+		
+		<script type="text/javascript">
+			$(function(){
+				
+				
+				
+				
+				
+				$("#T1").val($("#T1").attr('date'));
+				$("#T2").val($("#T2").attr('date'));
+				
+				$("#T1").shijian({
+					y:-10//当前年份+10
+				})
+//				$("#T2").shijian({
+//					y:-10//当前年份+10
+//				})
+				$.ajax({
+					type:"get",
+					url:"http://restapi.amap.com/v3/ip?ip=202.103.225.68&output=json&key=73cd3a248965fc4073a538c9f46df6e2",
+					async:true,
+					success:function(data){
+						console.log(data);
+					}
+				});
+				
+				function run(a){
+					if(a<=1){
+						return a;
+					}
+					return a+run(a-1);
+				}
+				
+			
+		})
+		</script>
+	</body>
+</html>

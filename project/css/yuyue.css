@@ -1,0 +1,36 @@
+body { background: #f1f1f1; font-size: .28rem; }
+
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #333; background: #fff; position: fixed; top: 0; border-bottom: .01rem solid #ccc; }
+#header i { width: 1.2rem; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: url(../img/success_return.png) no-repeat left center; background-size: 0.22rem 0.38rem; }
+#header i em { margin-left: .3rem !important; }
+#header span { font-size: 0.32rem; }
+#header b { width: 1.2rem; height: 100%; background: url(../img/9_search.png) no-repeat right center; background-size: .38rem; }
+
+.headerFill { height: 1rem !important; }
+
+#content { width: 100%; padding: 0 .2rem .4rem; box-sizing: border-box; background: #fff; }
+#content .repairItem { width: 100%; }
+#content .repairItem h2 { line-height: .8rem; color: #333; font-size: .3rem; text-indent: .6rem; background: url(../img/weiixu.png) no-repeat 0.1rem center; background-size: .4rem; }
+#content .repairItem .list { width: 100%; background: #f1f1f1; padding: .3rem .2rem .3rem .5rem; box-sizing: border-box; border: .01rem dashed #ccc; }
+#content .repairItem .list dl { font-size: .26rem; padding: .1rem 0; box-sizing: border-box; }
+#content .repairItem .list dl dt { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #f60; font-size: .26rem; text-align: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#content .repairItem .list dl dt b { display: inline-block; width: .3rem; height: .3rem; background: url(../img/9_cha.png) no-repeat center center; background-size: .3rem; }
+#content .repairItem .list dl dt .long { width: 2.5rem; }
+#content .repairItem .list dl dd { color: #666; }
+#content .describe { width: 100%; }
+#content .describe h2 { line-height: .8rem; color: #333; font-size: .3rem; text-indent: .6rem; background: url(../img/miaoshu.png) no-repeat 0.1rem center; background-size: .4rem; }
+#content .describe textarea { width: 100%; height: 1.6rem; background: #f1f1f1; resize: none; font-size: .24rem; outline: 0 none; border: .01rem dashed #ccc; padding: 0 .1rem; box-sizing: border-box; }
+#content .info { width: 100%; }
+#content .info li { width: 100%; height: .9rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #f1f1f1; margin-top: .3rem; }
+#content .info li .ip1 { width: 100%; height: 80%; border: 0; outline: 0 none; font-size: .24rem; text-indent: .7rem; }
+#content .info li:nth-of-type(1) input { background: #f1f1f1 url(../img/lianxiren-.png) no-repeat 0.1rem center; background-size: .4rem; }
+#content .info li:nth-of-type(2) input { background: #f1f1f1 url(../img/haoma.png) no-repeat 0.1rem center; background-size: .4rem; }
+#content .info .last { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 0 .1rem 0 .2rem; box-sizing: border-box; }
+#content .info .last span { text-indent: .7rem; }
+#content .info .last p { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .info .last p input { width: 1.5rem; font-size: .28rem; outline: 0 none; border: 0; background: #f1f1f1; }
+#content .info .last p b { display: inline-block; width: .18rem; height: .3rem; background: url(../img/www.png) no-repeat center center; background-size: .18rem .3rem; margin-left: .2rem; }
+#content .info .sp1 { background: url(../img/rili.png) no-repeat 0 center; background-size: .4rem; }
+#content .info .sp2 { background: url(../img/time.png) no-repeat 0 center; background-size: .4rem; }
+
+.footer .sure { display: block; margin: .3rem auto; width: 6.1rem; height: .8rem; line-height: .8rem; text-align: center; font-size: .3rem; color: #fff; background: #f60; border-radius: .1rem; }

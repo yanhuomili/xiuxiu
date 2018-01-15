@@ -1,0 +1,12 @@
+body { background: #f1f1f1; }
+
+#header { width: 100%; height: .88rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #333; background: #1ca5ff; position: fixed; top: 0; color: #fff; }
+#header i { width: 1.5rem; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: url(../img/1_return.png) no-repeat left center; background-size: 0.22rem 0.38rem; }
+#header i em { margin-left: .32rem; }
+#header span { font-size: .32rem; }
+#header b { width: 1.5rem; height: 100%; line-height: .88rem; text-align: right; }
+
+.headerFill { height: .88rem !important; }
+
+#content .brankList { width: 100%; }
+#content .brankList li { width: 100%; height: .9rem; line-height: .9rem; padding: 0 .3rem; box-sizing: border-box; background: #fff; border: .01rem solid #f1f1f1; color: #333; }

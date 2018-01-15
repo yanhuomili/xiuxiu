@@ -1,0 +1,201 @@
+@charset "utf-8";
+#wrap{
+    max-width:1920px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+a:hover{
+    text-decoration: none !important;
+}
+#header{
+    max-width:1920px;
+    min-width: 1200px;
+    height:90px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #fff;
+    
+    nav{
+        width:1200px;
+        height:90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .logo{
+            display: flex;
+            align-items: center;
+            >img{
+                width:50px;
+                height: 50px;
+                margin-right:5px;
+            }
+            >span{
+                font-size: 36px;
+                letter-spacing: 5px;
+            }
+        }
+        .mainNav{
+            display: flex;
+            align-items: center;
+            li{
+                padding: 0 25px;
+                a{
+                 font-size: 18px !important;
+                 color: #000;
+                
+                }
+                .active{
+                    color: #2388ca;
+                }
+            }
+        }
+        .enter{
+            display: flex;
+            color: #2388CA;
+            font-size: 16px;
+            a{
+                color: #2388CA;
+            }
+            
+        }
+    }
+   
+}
+#content{
+    width:100%;
+//  height: 700px;
+    background: #fff;
+    padding: 30px 0 60px 0; 
+    box-sizing: border-box;
+    overflow: hidden;
+    .orderInfo{
+        width:1200px;
+        height:700px;
+        margin: 0 auto ;
+        border: 1px dashed #f1f1f1;
+        padding: 280px 0 0 240px;
+        box-sizing: border-box;
+        display: flex;
+        color: #333;
+        .left{
+            width:86px;
+            height:100px;
+        }
+        .right{
+            margin-left: 20px;
+            h3{
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            >div{
+                margin-bottom: 20px;
+                .yugu{
+                    color: #f60;
+                    margin-left: 30px;
+                }
+            }
+            .see{
+                display: inline-block;
+                width:200px;
+                height:60px;
+                line-height: 60px;
+                text-align: center;
+                background: #f60;
+                color: #fff;
+                border-radius: 10px;
+                margin: 80px 0 0 170px;
+            }
+        }
+    }
+}
+#footer{
+    max-width:1920px;
+    height:275px;
+    padding: 50px 25px 40px 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f1f1f1;
+    .footerWrap{
+        width:1200px;
+        margin: 0 auto;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .line{
+            width:3px;
+            height:100px;
+            position: absolute;
+            top: 0;
+            left: 670px;
+            z-index: 5;
+            background: url(../img/line.jpg) no-repeat center center;
+        }
+        .left{
+            width:560px;
+            display: flex;
+            justify-content: space-between;
+            >ul{
+                width:80px;
+                li{
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    a{
+                        color: #666;
+                    }
+                }
+                li:first-child a{
+                    color: #333;
+                }
+            }
+            
+        }
+        .right{
+            width:420px;
+            display: flex;
+            justify-content: space-between;
+            .Rleft{
+                width:200px;
+                font-size: 16px;
+                display: flex;
+                flex-direction:column;
+                >i{
+                    padding-left: 70px;
+                    margin: 10px 0 20px;
+                }
+            }
+            .Rright{
+                width:110px;
+                >img{
+                    width:110px;
+                    height:110px;
+                }
+                >i{
+                    display: inline-block;
+                    width:110px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    >p{
+        width: 1200px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+}
+.btn-default{
+    width:300px;
+} 
+.btn-default:hover{
+    background: #fff !important;
+    
+}
+.dropdown-menu{
+    width:300px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选择手机品牌</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/chooseBrank.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<header id="header">
+				<i class="goBack"><em>发布问题</em></i><span>选择手机品牌</span><b class="confirm">确认</b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<ul class="brankList">
+					<li>华为手机</li>
+					<li>苹果手机</li>
+					<li>三星手机</li>
+					<li>魅族手机</li>
+					<li>联想手机</li>
+					<li>OPPO手机</li>
+					<li>OPPO手机</li>
+					<li>VIVO手机</li>
+				</ul>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('.brankList').on('click','li',function(){
+					console.log($(this).text())
+				})
+				
+				$('.confirm').click(function(){
+					console.log($(this).text())
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>附近维修商店</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/repairShop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<div class="layout">
+				<div class="top"><i class="return"></i><p><span class="index">1</span>/<b class="totalNum">6</b></p><i></i></div>
+				<div class="swiper-container1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/skim.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/skim.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/skim.jpg"/>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/skim.jpg"/>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<header id="header">
+				<i class="goBack"></i><span>天天科技</span><b></b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/1_banner.png"/></div>
+						<div class="swiper-slide"><img src="img/1_banner.png"/></div>
+						<div class="swiper-slide"><img src="img/1_banner.png"/></div>
+						<div class="swiper-slide"><img src="img/1_banner.png"/></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="someInfo">
+					<div class="top">
+						<dl class="left">
+							<dt><img src="img/wx-t1.jpg"/></dt>
+							<dd>
+								<p><i class="midLogo"><img src="img/1_shop.png"/></i><em>天天科技</em></p>
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</dd>
+						</dl>
+						<a href="###">关注</a>
+					</div>
+					<p>店铺主要维修手机各种问题，可邮寄、可上门、在线咨询服务</p>
+				</div>
+			</section>
+			<section class="midNav">
+				<div>
+					<a href="###" class="active"><i><img src="img/1_item.png"/></i><span>服务项目</span></a>
+					<a href="###"><i><img src="img/comment.png"/></i><span>客户评论</span></a>
+					<a href="###"><i><img src="img/1_dec.png"/></i><span>店铺简介</span></a>
+				</div>
+			</section>
+			<section class="repairInfo">
+				<!--第一模块-->
+				<div class="item one">
+					<ul class="menu">
+						<li class="circle"><b></b></li>
+						<li class="pinpai choose" v-bind:class="{active:menuArr[0].show}" @tap="pinpai"><span>品牌</span><i :class="{active:menuArr[0].choose}"></i></li>
+						<li class="xinghao choose" v-bind:class="{active:menuArr[1].show}" @tap="xinghao"><span>型号</span><i :class="{active:menuArr[1].choose}"></i></li>
+						<li class="guzhang choose" v-bind:class="{active:menuArr[2].show}" @tap="guzhang"><span>故障</span><i :class="{active:menuArr[2].choose}"></i></li>
+						<li class="baojia">报价</li>
+					</ul>
+					<ul class="problemList">
+						<li v-for="(item,index) in price"><i v-bind:class="{active:item.yes}" @tap="singleTap(index)"></i><span>{{item.pinpai}}</span><span>{{item.leixing}}</span><span>{{item.guzhang}}</span><p>&yen;<b>{{item.danjia}}</b></p></li>
+						<!--<li><i></i><span>苹果</span><span>iPhone6s plus</span><span>外屏碎</span><p>&yen;<b>370</b></p></li>
+						<li><i></i><span>苹果</span><span>iPhone6s plus</span><span>外屏碎</span><p>&yen;<b>370</b></p></li>-->
+					</ul>
+					<!--弹出层-->
+					<div class="grayLayout" v-if="grayShow">
+						<dl class="pinpai" v-if="menuArr[0].dl">
+							<dt v-for="(item,index) in menuArr[0].pinpai" @tap="cp(index)" v-bind:class="{active:index==bgc}">{{item}}</dt>
+							<!--<dt>华为</dt>
+							<dt>小米</dt>
+							<dt>乐视</dt>
+							<dt>OPPO</dt>
+							<dt>VIVO</dt>
+							<dt>魅族</dt>
+							<dt>三星</dt>
+							<dt>金立</dt>
+							<dt>努比亚</dt>
+							<dt>诺基亚</dt>
+							<dt>美图</dt>-->
+						</dl>
+						<dl class="xinghao" v-if="menuArr[1].dl">
+							<dt v-for="(item,index) in menuArr[1].xinghao" v-bind:class="{active:index==bgc2}" @tap="cx(index)">{{item}}</dt>
+							<!--<dt>iPhone 2</dt>
+							<dt>iPhone 3</dt>
+							<dt>iPhone 4</dt>
+							<dt>iPhone 5</dt>
+							<dt>iPhone 6</dt>
+							<dt>iPhone 7</dt>
+							<dt>iPhone 8</dt>
+							<dt>iPhone Pluss 8</dt>
+							<dt>iPhone Pluss 7</dt>
+							<dt>iPhone Pluss 6</dt>
+							<dt>iPhone Pluss 5</dt>-->
+						</dl>
+						<dl class="guzhang" v-if="menuArr[2].dl">
+							<!--<dt><p><i></i><span>屏幕</span><i class="gt"><img src="img/8_arr.png"/></i></p><b>选择故障原因</b></dt>-->
+							<ul class="problemType">
+								<li :class="{color:bgc3==index}" v-for='(item,index) in pArr' @tap="cgz(index)"><i></i><i :class="{color:item.c==true}">{{item.text}}</i><em :class="{emActive:bgc3==index}"></em></li>
+								<!--<li><i></i><i>外壳/边框</i><em></em></li>
+								<li><i></i><i>按键</i><em></em></li>
+								<li><i></i><i>声音</i><em></em></li>
+								<li><i></i><i>触屏</i><em></em></li>
+								<li><i></i><i>摄像与拍照</i><em></em></li>
+								<li><i></i><i>电源/电池</i><em></em></li>-->
+		
+							</ul>
+							<!--<ol class="problemDetail screen"  v-if="pShow">
+								<li><i>请选择故障原因</i></li>
+								<li><i>内屏碎</i><em></em></li>
+								<li><i>外屏碎</i><em></em></li>
+							</ol>-->
+							<ol class="problemDetail frame" v-for="(item,index) in pDArr" v-if="index==bgc3">
+								<li v-bind:class="{wordActive:item.w}"><i>请选择故障原因</i></li>
+								<li v-for="(it,index1) in item.p" v-bind:class="{wordActive:it.b}" @tap="endP(index,index1)"><i>{{it.a}}</i><em v-bind:class="{yesActive:it.b}"></em></li>
+								
+								<!--<li><i>外壳磨损</i><em></em></li>
+								<li><i>外壳掉色</i><em></em></li>-->
+							</ol>
+							<!--<ol class="problemDetail key">
+								<li><i>请选择故障原因</i></li>
+								<li><i>开关</i><em></em></li>
+								<li><i>home键</i><em></em></li>
+								<li><i>声音键</i><em></em></li>
+								<li><i>数字键</i><em></em></li>
+							</ol>-->
+							<!--<ol class="problemDetail voice">
+								<li><i>请选择故障原因</i></li>
+								<li><i>声音沙哑</i><em></em></li>
+								<li><i>不能调节</i><em></em></li>
+								<li><i>喇叭坏了</i><em></em></li>
+							</ol>-->
+							<!--<ol class="problemDetail touch">
+								<li><i>请选择故障原因</i></li>
+								<li><i>触屏延迟</i><em></em></li>
+								<li><i>无法关闭屏幕</i><em></em></li>
+								<li><i>亮度不能调节</i><em></em></li>
+							</ol>-->
+							<!--<ol class="problemDetail camera">
+								<li><i>请选择故障原因</i></li>
+								<li><i>摄像头坏</i><em></em></li>
+								<li><i>拍照不清晰</i><em></em></li>
+								<li><i>视屏不能保存</i><em></em></li>
+							</ol>-->
+							<!--<ol class="problemDetail power">
+								<li><i>请选择故障原因</i></li>
+								<li><i>电池漏电</i><em></em></li>
+								<li><i>电池膨胀</i><em></em></li>
+								<li><i>无法充电</i><em></em></li>
+							</ol>-->
+						</dl>
+					</div>
+					<section class="footerFill"></section>
+					<footer id="footer">
+						<p class="quanxuan" @tap="selectAll"><i v-bind:class="{active:quanxuan}" @tap=""></i><span>全选</span></p>
+						<p class="heji">合计:<i>&yen;</i><span>{{amount}}</span></p>
+						<a href="###" class="yuyue">预约</a>
+					</footer>
+				</div>
+				<!--第二模块-->
+				<div class="item two">
+					<dl>
+						<dt><img src="img/userhead.png"/></dt>
+						<dd>
+							<div class="user">
+								<div>
+									<i>张无忌</i>
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+									</ul>
+								</div>	
+								<span>2017-07-25</span>
+							</div>
+							<span class="repairArea">屏幕维修</span>
+							<p>师傅现场更换手机屏幕，速度很快，手工不错，服务态度很好，给予较高的评价。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/userhead.png"/></dt>
+						<dd>
+							<div class="user">
+								<div>
+									<i>张无忌</i>
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+									</ul>
+								</div>	
+								<span>2017-07-25</span>
+							</div>
+							<span class="repairArea">屏幕维修</span>
+							<p>师傅现场更换手机屏幕，速度很快，手工不错，服务态度很好，给予较高的评价。</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/userhead.png"/></dt>
+						<dd>
+							<div class="user">
+								<div>
+									<i>张无忌</i>
+									<ul>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+									</ul>
+								</div>	
+								<span>2017-07-25</span>
+							</div>
+							<span class="repairArea">屏幕维修</span>
+							<p>师傅现场更换手机屏幕，速度很快，手工不错，服务态度很好，给予较高的评价。</p>
+							<p class="reply"><i>商家回复信息:</i><span>这是商家回复的信息这是商家回复的信息这是商家回复的信息这是商家回复的信息这是商家回复的信息这是商家回复的信息</span></p>
+						</dd>
+					</dl>
+				</div>
+				<!--第三模块-->
+				<div class="item thr">
+					<ul class="contact">
+						<li>
+							<i><img src="img/contact1.png"/></i>
+							<span>在线咨询</span>
+							<b></b>
+						</li>
+						<li>
+							<i><img src="img/contact2.png"/></i>
+							<span>联系我们</span>
+						</li>
+					</ul>
+					<dl class="work">
+						<dt>
+							<p><i>工作时间 :</i><span>周一至周六</span></p>
+							<p><i>联系电话 :</i><span>12354568758</span></p>
+						</dt>
+						<dt>
+							<p><i>具体时间 :</i><span>10:00-22:00</span></p>
+							<p><i>固定电话 :</i><span>400-3545-3325</span></p>
+						</dt>
+					</dl>
+					<div class="dongtai">
+						<h4>店铺动态</h4>
+						<ul class="dynamic">
+							<li><img src="img/dongtai.png"/></li>
+							<li><img src="img/dongtai.png"/></li>
+							<li><img src="img/dongtai.png"/></li>
+							<li><img src="img/dongtai.png"/></li>
+						</ul>
+					</div>
+					<div class="introduce">
+						<h3>一句话简介:</h3>
+						<p>专业修手机，配件维修专业修手机，配件维修专业修手机，配件维修专业修手机，配件维修专业修手机，配件维修</p>
+					</div>
+					<dl class="address">
+						<dt><img src="img/position.png"/></dt>
+						<dd>
+							<i>地址:</i><span>广州市白云区云城西路89号区云城西路89号M8创意园A栋401C</span>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			
+			
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		
+		<script type="text/javascript">
+			var danjia=[
+			{yes:false,pinpai:'苹果',leixing:'iPhone 7Plus',guzhang:'外屏碎(图像显示正常声音)',danjia:370},
+			{yes:false,pinpai:'苹果',leixing:'iPhone 7Plus',guzhang:'外屏碎(图像显示正常声音)',danjia:370},
+			{yes:false,pinpai:'苹果',leixing:'iPhone 7Plus',guzhang:'外屏碎(图像显示正常声音)',danjia:370},
+			{yes:false,pinpai:'三星',leixing:'node',guzhang:'内屏碎',danjia:340},
+			{yes:false,pinpai:'华为',leixing:'国产',guzhang:'边框破损',danjia:220},
+			{yes:false,pinpai:'魅族',leixing:'4s',guzhang:'按键无效',danjia:360}
+			]
+			var menuArr=[
+			{show:false,choose:false,dl:true,pinpai:['苹果','华为','三星','魅族','乐视','小米','OPPO','VIVO','金立','努比亚','诺基亚','美图']},
+			{show:false,choose:false,dl:false,xinghao:['iPhone 1','iPhone 2','iPhone 3','iPhone 4','iPhone 4','iPhone 5','iPhone 6','iPhone 7','iPhone 8']},
+			{show:false,choose:false,dl:false}
+			];
+			var pArr=[{text:'屏幕',c:false},{text:'边框/外壳',c:false},{text:'按键',c:false},{text:'声音',c:false},{text:'触屏',c:false},{text:'摄像与拍照',c:false},{text:'电源/电池',c:false}];
+			var pDArr=[
+			{p:[{a:'外屏碎',b:false},{a:'内屏碎',b:false}],w:false},
+			{p:[{a:'外壳磨损',b:false},{a:'外壳掉色',b:false}],w:false},
+			{p:[{a:'开关',b:false},{a:'home键',b:false},{a:'声音键',b:false},{a:'数字键',b:false}],w:false},
+			{p:[{a:'声音沙哑',b:false},{a:'不能调节',b:false},{a:'喇叭坏',b:false}],w:false},
+			{p:[{a:'触屏坏',b:false},{a:'无法锁屏',b:false},{a:'无法调节亮度',b:false}],w:false},
+			{p:[{a:'摄像头坏',b:false},{a:'拍照不清晰',b:false},{a:'视频不能保存',b:false}],w:false},
+			{p:[{a:'电池漏电',b:false},{a:'电池膨胀',b:false},{a:'不能充电',b:false}],w:false},
+			]
+			var vm=new Vue({
+				el:'#wrap',
+				data:{
+					price:danjia,
+					quanxuan:false,
+					amount:0,
+					menuArr:menuArr,
+					grayShow:false,
+					bgc:-1,
+					bgc2:-1,
+					pArr:pArr,
+					bgc3:0,
+					pShow:false,
+					pDArr:pDArr,
+				},
+				methods:{
+					singleTap:function(index){
+						var num=0;
+						var arr=[];
+						var total=0;
+						var len=this.price.length;
+						this.price[index].yes=!this.price[index].yes;
+						for(var i=0;i<len;i++){
+							if(this.price[i].yes==true){
+								num++;
+								arr.push(this.price[i].danjia);
+							}
+						}
+						for(var i=0;i<arr.length;i++){
+							total+=arr[i];
+						}
+						this.amount=total;
+						console.log(arr,this.totalArr,this.all)
+						if(num==len){
+							this.quanxuan=true;
+						}else{
+							this.quanxuan=false;
+						}
+					},
+					selectAll:function(){
+						var len=this.price.length;
+						this.quanxuan=!this.quanxuan;
+						var arr=[];
+						var total=0;
+						if(this.quanxuan){
+							for(var i=0;i<len;i++){
+								this.price[i].yes=true;
+								arr.push(this.price[i].danjia);
+							}
+							console.log(arr)
+							for(var i=0;i<arr.length;i++){
+								total+=arr[i];
+							}
+							this.amount=total;
+						}else{
+							for(var i=0;i<len;i++){
+								this.price[i].yes=false;
+							}
+							this.amount=0;
+						}
+					},
+					pinpai:function(){//选择品牌
+						this.grayShow=true;
+						this.menuArr[0].dl=true;
+						this.menuArr[0].show=true;
+						this.menuArr[0].choose=true;
+						
+					},
+					xinghao:function(){//选择型号
+						this.grayShow=true;
+						this.menuArr[1].dl=true;
+						this.menuArr[1].show=true;
+						this.menuArr[1].choose=true;
+					},
+					guzhang:function(){//故障
+						this.grayShow=true;
+						this.menuArr[2].dl=true;
+						this.menuArr[2].show=true;
+						this.menuArr[2].choose=true;
+					},
+					cp:function(index){
+						this.bgc=index;
+						this.grayShow=false;
+						this.menuArr[0].dl=false;
+					},
+					cx:function(index){
+						this.bgc2=index;
+						this.grayShow=false;
+						console.log(index)
+					},
+					cgz:function(index){
+						console.log(index)
+						this.bgc3=index
+					},
+					endP:function(index,index1){
+						this.pDArr[index].p[index1].b=true;
+						console.log(index,index1)
+						this.pDArr[index].w=true;
+						this.$set(this.pArr[index],'d','false');//添加属性
+						this.pArr[index].c=true;
+						this.pArr[index].d=true;
+						
+						
+						console.log(this.pArr);
+					}
+					
+				}
+			})
+			
+		
+			$(function(){
+				//图片浏览
+				var myswiper1=new Swiper('.swiper-container1',{
+					pagination:'.swiper-pagination',
+					onTouchMove:function(){
+						
+					},
+					onTransitionEnd:function(){
+						var index=myswiper1.activeIndex+1;
+						console.log(index)
+						$('.index').text(index);
+					}
+				})
+				//浏览图片的模块隐藏
+				$('.layout').hide();
+				//浏览图片
+				$('.dynamic').on('click','li',function(){
+					var index=$(this).index();
+					var n=$('.dynamic li').length;
+					myswiper1.slideTo(index);
+					$('.layout').show();
+					$('.index').text(index+1);
+					$('.totalNum').text(n);
+					
+					
+				})
+				//退出浏览
+				$('.return').click(function(){
+					$('.layout').hide();
+				})
+				
+				
+				//实例化轮播图
+				var isSwiper=false;
+				var myswiper=new Swiper('.swiper-container',{
+					loop:false,
+					pagination:'.swiper-pagination',
+					autoplayDisableOnInteraction: true,
+					autoplay:2000,
+					onTouchMove:function(){
+						isSwiper=true;
+					},
+					onTransitionEnd:function(){
+						isSwiper=false;
+					}
+				})
+				
+				
+				$('.midNav a').click(function(){
+					var index=$(this).index();
+					$(this).addClass('active').siblings().removeClass('active');
+					$('.item').eq(index).show().siblings().hide();
+				})
+				
+				
+//				$('.grayLayout').hide();
+//				$('.grayLayout dl').hide();
+				//品牌选择
+//				$('.repairInfo .pinpai').singleTap(function(){
+//					$(this).addClass('active').find('i').addClass('active');
+//					$('.grayLayout,.grayLayout .pinpai').show();
+//				})
+//				//型号
+//				$('.repairInfo .xinghao').singleTap(function(){
+//					$(this).addClass('active').find('i').addClass('active');
+//					$('.grayLayout,.grayLayout .xinghao').show();
+//				})
+//				//故障
+//				$('.repairInfo .guzhang').singleTap(function(){
+//					$(this).addClass('active').children('i').addClass('active');
+//					$('.grayLayout,.grayLayout .guzhang').show();
+//				})
+//				
+//				//弹出框
+//				//选品牌
+//				$('.grayLayout .pinpai dt').singleTap(function(){
+//					$(this).addClass('active').siblings().removeClass('active');
+//					$('.repairInfo .pinpai').children('i').removeClass('active');
+//				})
+//				//选型号
+//				$('.grayLayout .xinghao dt').singleTap(function(){
+//					$(this).addClass('active').siblings().removeClass('active');
+//					$('.repairInfo .xinghao').children('i').removeClass('active');
+//				})
+//				//选故障类型
+//				$('.grayLayout .problemType li').singleTap(function(){
+//					$(this).addClass('active').children('em').addClass('emActive');
+//				})
+//				
+//				$('.grayLayout .problemDetail li').singleTap(function(){
+//					$(this).addClass('wordActive').children('em').addClass('yesActive');
+//				})
+//				
+			})
+		</script>
+	</body>
+</html>

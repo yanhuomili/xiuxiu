@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>问题详情</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/problemDetail.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<header id="header">
+				<i class="goBack"><em></em></i><span>问题详情</span><b></b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<div class="top">
+					<div class="title">
+						<i></i>
+						<span>听不到对方的声音，听不到对方的声音，听不到对方的声音，听不到对方的声音</span>
+					</div>
+					<div class="describe">
+						<h3>
+							<span>
+								<b></b>
+								<i>巴基斯坦</i>
+							</span>
+							<span class="right">发布于<em>2</em>小时前</span>
+						</h3>
+						<p>对方听不到我的声音，但是我能听到对方的声音对方听不到我的声音，但是我能听到对方的声音对方听不到我的声音，但是我能听到对方的声音对方听不到我的声音，但是我能听到对方的声音</p>
+						<p>对方听不到我的声音，但是我能听到对方的声音对方听不到我的声音，但是我能听到对方的声音对方听不到我的声音，但是我能听到对方的声音对方听不到我的声音，但是我能听到对方的声音</p>
+					</div>
+				</div>
+				<div class="response">
+					<h3><i>20</i>个回答</h3>
+					<div class="respDetail">
+						<dl>
+							<dt><img src="img/8_pic2.png"/></dt>
+							<dd>
+								<h5>
+									<!--商家回复时有图像-->
+									<i><img src="img/8_pic3.png"/></i>
+									<span>天天科技手机维修</span>
+								</h5>
+								<div class="time">
+									<time>2017-7-24</time>
+									<!--商家回复时没有回复条数-->
+									<!--<span><i>5</i>条回复<b class="in"></b></span>-->
+								</div>
+								<!--商家回复时行高比较大-->
+								<p class="sellerText">天天科技维修店天天科技维修店天天科技维修店天天科技维修店天天科技维修店天天科技维修店天天科技维修店</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/8_pic2.png"/></dt>
+							<dd>
+								<h5>
+									<!--<i><img src="img/8_pic3.png"/></i>-->
+									<span>愤怒的小鸟</span>
+								</h5>
+								<div class="time">
+									<time>2017-7-24</time>
+									<span><i>5</i>条回复<b class="in"></b></span>
+								</div>
+								<p class="">天天科技维修店天天科技维修店天天科技维修店天天科技维修店天天科技维修店天天科技维修店天天科技维修店</p>
+							</dd>
+						</dl>
+						
+					</div>
+				</div>
+			</section>
+			<!--<section class="footerFill"></section>
+			<footer id="footer">
+				<div class="release">
+					<span class="releaseBtn">发布问题</span>
+					<span class="myProblem">我的问题</span>
+				</div>
+			</footer>-->
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('.bankList,.bankList ul').hide();
+				
+				$('.pinpai li').click(function(){
+					var index=$(this).index();
+					$(this).addClass('active').siblings().removeClass('active');
+					$('.bankList').show().children().eq(index).show().siblings().hide();
+				})
+				$('.bankList ul li').click(function(){
+					$(this).parent().hide().parent().hide();
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body { background: #f1f1f1; }
+
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; background: #fff; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #333; position: fixed; top: 0; }
+#header i { width: .7rem; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: url(../img/success_return.png) no-repeat left center; background-size: 0.22rem 0.38rem; }
+#header i em { display: inline-block; width: 1.5rem; margin-left: .3rem !important; }
+#header span { width: 5.4rem; height: .5rem; font-size: 0.32rem; border-radius: .5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border: .01rem solid #ccc; }
+#header span input { width: 5rem; height: .4rem; font-size: .24rem; color: #999; text-indent: .6rem; border: 0; outline: 0 none; border-radius: .5rem; background: url(../img/9_search.png) no-repeat 0.1rem center; background-size: .38rem; }
+#header span em { display: inline-block; width: .3rem; height: .3rem; background: url(../img/9_cha.png) no-repeat center center; background-size: .3rem; margin-right: 0.1rem; }
+#header b { width: .7rem; height: 100%; text-align: right; line-height: .88rem; }
+
+.headerFill { height: 1rem !important; }
+
+#content { /*历史记录*/ /*热门搜索*/ }
+#content .histroy { width: 100%; }
+#content .histroy .tip { width: 100%; height: 4.5rem; background: url(../img/search-tip.png) no-repeat center center; background-size: 3.35rem 3.7rem; }
+#content .hotSearch { width: 100%; padding: 0 .2rem; box-sizing: border-box; background: #fff; border-top: .01rem solid #d8d8d8; }
+#content .hotSearch h2 { width: 100%; height: 1rem; padding: 0 .3rem 0 0; box-sizing: border-box; background: #fff; color: #333; font-size: .32rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .hotSearch h2 p { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .hotSearch h2 p strong { font-size: .32rem; margin-left: .2rem; }
+#content .hotSearch h2 p i { display: inline-block; width: .06rem; height: .3rem; background: #ff2b35; }
+#content .hotSearch h2 p b { display: inline-block; width: .28rem; height: .32rem; margin-right: .2rem; background: url(../img/9_laji.png) no-repeat center center; background-size: .28rem .32rem; }
+#content .hotSearch .searchItems { width: 100%; height: 100%; padding: 0; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+#content .hotSearch .searchItems li { height: .72rem; line-height: .72rem; padding: 0 .25rem; box-sizing: border-box; margin: 0 .15rem .3rem; border: .01rem solid #4fb3ff; color: #4fb3ff; border-radius: 0 !important; background: #fff; font-size: .26rem; }
+#content .list > div { width: 100%; height: 100%; letter-spacing: .01rem; }
+#content .list > div dl { width: 100%; padding: .4rem .3rem .3rem; box-sizing: border-box; margin-bottom: .1rem; background: #fff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content .list > div dl dt { width: 2rem; height: 2rem; position: relative; }
+#content .list > div dl dt video { width: 2rem; height: 2rem; position: absolute; top: 0; }
+#content .list > div dl dt b { width: .6rem; height: .6rem; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+#content .list > div dl dd { width: 4.5rem; }
+#content .list > div dl dd h4 { font-size: .3rem; color: #333; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#content .list > div dl dd p { color: #999; height: 1.2rem; overflow: hidden; line-height: 1.4; margin-top: .2rem; margin-bottom: .15rem; }
+#content .list > div dl dd > div { color: #999; font-size: .2rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.footerFill { width: 100%; height: .9rem; }
+
+#footer { width: 100%; height: .9rem; position: fixed; bottom: 0; color: #fff; font-size: .32rem; z-index: 9; display: none; }
+#footer .release { width: 100%; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#footer .release span { display: inline-block; line-height: .9rem; text-align: center; border: .01rem solid #d1d1d1; box-sizing: border-box; }
+#footer .release .releaseBtn { width: 4.5rem; background: #fff; color: #666; padding: 0 .3rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#footer .release .releaseBtn i { display: inline-block; width: .38rem; height: .38rem; box-sizing: border-box; margin-right: .4rem; border: .02rem solid #999; border-radius: 50%; }
+#footer .release .releaseBtn .active1 { border: 0; background: url(../img/7_duigou.png) no-repeat center center; background-size: .38rem; }
+#footer .release .myProblem { width: 3rem; background: #fe3131; }

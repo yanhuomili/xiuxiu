@@ -1,0 +1,69 @@
+#wrap { max-width: 1920px; margin: 0 auto; }
+
+.fixBox { width: 150px; padding: 20px 10px 15px; box-sizing: border-box; background: #fff; border-radius: 5px; position: fixed; top: 200px; right: 20px; z-index: 999; }
+.fixBox a { width: 100%; height: 50px; border-bottom: 1px dashed #ccc; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #666; }
+.fixBox a i { width: 26px; height: 26px; margin-right: 12px; }
+.fixBox a:first-child { color: #2388CA; }
+.fixBox a:last-child { border-bottom: 0; }
+
+#header { max-width: 1920px; min-width: 1200px; height: 90px; border-bottom: 1px solid #ccc; box-sizing: border-box; background: #f1f1f1; }
+#header nav { width: 1200px; height: 90px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0 auto; }
+#header nav .logo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#header nav .logo > img { width: 50px; height: 50px; margin-right: 5px; }
+#header nav .logo > span { font-size: 36px; letter-spacing: 5px; }
+#header nav .nav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#header nav .nav li { padding: 0 25px; }
+#header nav .nav li .active { color: #2388ca; }
+#header nav .enter { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+#content { width: 1200px; padding: 90px 0 75px; box-sizing: border-box; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+#content .sildeBar { width: 250px; height: 100%; padding: 18px 25px; box-sizing: border-box; margin-right: 110px; background: url(../img/6_square.png) no-repeat center center; background-size: 100% 100%; }
+#content .sildeBar li { width: 100%; height: 60px; line-height: 60px; text-align: center; border-bottom: 1px dashed #ccc; box-sizing: border-box; }
+#content .sildeBar .active { background: #2288c9; color: #fff; }
+#content .h3 { width: 150px; height: 50px; line-height: 50px; text-align: center; background: #2288c9; color: #fff; position: relative; margin-bottom: 30px; }
+#content .h3:after { content: ""; display: inline-block; width: 612px; height: 2px; background: #2288c9; position: absolute; top: 50%; left: 150px; }
+#content .question { width: 762px; }
+#content .question .problemList { width: 745px; }
+#content .question .problemList dl { width: 100%; padding: 16px 0 20px; box-sizing: border-box; background: #f1f1f1; }
+#content .question .problemList dl dd { font-size: 16px; color: #666; padding: 0 30px; margin-top: 16px; }
+#content .question .problemList ul { width: 745px; padding: 0 0 0 5px; box-sizing: border-box; }
+#content .question .problemList ul li { width: 100%; padding: 30px 0 25px; border-bottom: 1px dashed #d3d3d3; box-sizing: border-box; }
+#content .service { width: 762px; display: none; }
+#content .service .serviceList { width: 100%; padding-left: 35px; box-sizing: border-box; margin-top: 40px; }
+#content .service .serviceList dl { width: 100%; padding-bottom: 30px; box-sizing: border-box; }
+#content .service .serviceList dl dt { width: 98%; height: 35px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border-bottom: 1px solid #ccc; color: #333; }
+#content .service .serviceList dl dt i { width: 6px; height: 30px; border-radius: 6px; background: #2288c9; margin-right: 10px; }
+#content .service .serviceList dl dd { margin: 20px 0 0; font-size: 14px; text-indent: 30px; color: #666; line-height: 2; }
+#content .about { width: 762px; display: none; }
+#content .about > .pic { width: 742px; height: 204px; margin: 30px 0; background: #23CC79; }
+#content .about .aboutList { width: 100%; margin-top: 40px; }
+#content .about .aboutList dl { width: 100%; padding-bottom: 30px; box-sizing: border-box; }
+#content .about .aboutList dl dt { width: 98%; height: 50px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; padding-left: 20px; box-sizing: border-box; color: #333; margin-bottom: 30px; }
+#content .about .aboutList dl dt i { width: 6px; height: 30px; border-radius: 6px; background: #2288c9; margin-right: 10px; }
+#content .about .aboutList dl dd { padding: 0 60px 0 35px; box-sizing: border-box; font-size: 14px; color: #666; line-height: 2; letter-spacing: 3px; margin-bottom: 40px; }
+#content .connect { width: 762px; display: none; }
+#content .connect .aboutList { width: 745px; padding-bottom: 50px; box-sizing: border-box; }
+#content .connect .aboutList li { width: 100%; height: 60px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-left: 35px; box-sizing: border-box; border-bottom: 1px dashed #ccc; color: #666; }
+#content .connect .aboutList li i { width: 12px; height: 12px; margin-right: 20px; }
+#content .connect .aboutList li:first-child { border-bottom: 0; }
+#content .join { width: 762px; display: none; }
+#content .join .joinList { width: 745px; padding: 20px 15px 30px 30px; box-sizing: border-box; }
+#content .join .joinList li { width: 100%; padding: 20px 0 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; box-sizing: border-box; border-bottom: 1px dashed #ccc; color: #666; }
+#content .join .joinList li i { width: 12px; height: 12px; margin-right: 20px; background: red; }
+
+#footer { max-width: 1920px; height: 275px; padding: 50px 25px 40px 0; box-sizing: border-box; color: #333; background: #f1f1f1; }
+#footer .footerWrap { width: 1200px; margin: 0 auto; }
+#footer .top { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; position: relative; }
+#footer .top .line { width: 3px; height: 100px; position: absolute; top: 0; left: 670px; z-index: 5; background: url(../img/line.jpg) no-repeat center center; }
+#footer .top .left { width: 560px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#footer .top .left > ul { width: 80px; }
+#footer .top .left > ul li { font-size: 16px; margin-bottom: 10px; }
+#footer .top .left > ul li a { color: #666; }
+#footer .top .left > ul li:first-child a { color: #333; }
+#footer .top .right { width: 420px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#footer .top .right .Rleft { width: 200px; font-size: 16px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+#footer .top .right .Rleft > i { padding-left: 70px; margin: 10px 0 20px; }
+#footer .top .right .Rright { width: 110px; }
+#footer .top .right .Rright > img { width: 110px; height: 110px; }
+#footer .top .right .Rright > i { display: inline-block; width: 110px; text-align: center; margin-top: 10px; }
+#footer > p { width: 1200px; text-align: center; margin-top: 20px; font-size: 14px; margin: 0 auto; }

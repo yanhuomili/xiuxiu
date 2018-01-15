@@ -1,0 +1,20 @@
+body { background: #f1f1f1; }
+
+#header { width: 100%; height: 1rem; padding: 0 0.2rem; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; color: #333; background: #fff; position: fixed; top: 0; border-bottom: .01rem solid #ccc; }
+#header i { width: 1.2rem; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: url(../img/success_return.png) no-repeat left center; background-size: 0.22rem 0.38rem; }
+#header i em { margin-left: .3rem !important; }
+#header span { font-size: 0.32rem; }
+#header b { width: 1.2rem; height: 100%; }
+
+.headerFill { height: 1rem !important; }
+
+#content { width: 100%; color: #333; }
+#content h3 { width: 100%; height: .8rem; line-height: .8rem; background: #f1f1f1; color: #666; padding: 0 .3rem; box-sizing: border-box; }
+#content ul { width: 100%; padding: 0 .3rem; box-sizing: border-box; background: #fff; }
+#content ul li { width: 100%; height: .8rem; border-bottom: .01rem solid #ccc; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+#content ul li em { display: inline-block; width: .24rem; height: .24rem; background: url(../img/arr.png) no-repeat center center; background-size: .24rem; }
+#content h4 { width: 100%; height: .8rem; line-height: .8rem; padding: 0 .3rem; box-sizing: border-box; }
+#content p { width: 100%; padding: 0 .3rem; box-sizing: border-box; height: .8rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #fff; }
+#content p span { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+#content p span i { display: inline-block; width: .4rem; height: .4rem; background: url(../img/fankui.png) no-repeat center center; background-size: .4rem; margin-right: .2rem; }
+#content p em { display: inline-block; width: .24rem; height: .24rem; background: url(../img/arr.png) no-repeat center center; background-size: .24rem; }

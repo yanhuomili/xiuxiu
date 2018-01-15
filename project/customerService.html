@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>客服</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/customerService.css"/>
+	</head>
+	<body>
+		<header id="header">
+			<i class="goBack"></i><span>在线客服</span><b></b>
+		</header>
+		<section class="headerFill"></section>
+		<section id="content">
+			
+		</section>
+		<section class="footerFill"></section>
+		<footer id="footer">
+			<div class="search">
+				<a href="###">点单查询</a>
+				<a href="###">点单查询</a>
+				<a href="###">点单查询</a>
+				<a href="###">点单查询</a>
+			</div>
+			<div class="tools">
+				<i></i>
+				<div class="ipt" contenteditable="true" placeholder="请输入内容"></div>
+				<!--<input type="text" class="ipt"/>-->
+				<i></i>
+				<i class="send"></i>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				var val='';
+				$('.ipt').on('input',function(){
+					val=$('.ipt').text().trim();
+					if(val){
+						$('.send').text('发送').addClass('active');
+					}else{
+						$('.send').text('').removeClass('active');
+					}
+				})
+				
+				$('.send').tap(function(){
+					if($(this).hasClass('active')){
+						var news=$('<div class="createNews"><i></i><span>'+val+'<em></em></span></div>');
+						$('#content').append(news)
+//						
+//						var news2=$('<div class="createNews2 right"><span>'+val+'<em></em></span><i></i></div>');
+//						$('#content').append(news2)
+						$('.ipt').text('')
+						$('.send').text('').removeClass('active');
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

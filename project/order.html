@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>维修订单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/order.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<!--取消订单-->
+			<div class="layout l">
+				<div class="layoutContent">
+					<h4>请选择取消订单的原因 (单选):</h4>
+					<ul class="reason">
+						<li><i class="active"></i><b>等待商家接单时间太长</b></li>
+						<li><i></i><b>不想修了</b></li>
+					</ul>
+					<p><span class="giveUp">取消</span><span class="sure">确定</span></p>
+				</div>
+			</div>
+			<div class="layoutRepairing l">
+				<div class="layoutContent">
+					<h4>请选择取消订单的原因 (单选):</h4>
+					<ul class="reason">
+						<li><i class="active"></i><b>等待商家接单时间太长</b></li>
+						<li><i></i><b>商家报价太高</b></li>
+						<li><i></i><b>商家原材料质量不够好</b></li>
+						<li><i></i><b>商家距离我太远</b></li>
+						<li><i></i><b>不想修了</b></li>
+					</ul>
+					<p><span class="giveUp">取消</span><span class="again">重下一单</span><span class="sure">确定</span></p>
+				</div>
+			</div>
+			<!--评论订单-->
+			<div class="layoutCommon l">
+				<div class="layoutContent">
+					<h4>填写订单评论内容:</h4>
+					<textarea name="" rows="" cols="" class="text" placeholder="请填写评论的内容"></textarea>
+					<p><span class="giveUp">取消</span><span class="sure">确定</span></p>
+				</div>
+			</div>
+			<!--删除订单-->
+			<div class="layoutDel l">
+				<div class="layoutContent">
+					<h4>是否删除维修订单？</h4>
+					<p><span class="giveUp">取消</span><span class="sure">确定</span></p>
+				</div>
+			</div>
+			<header id="header">
+				<i class="goBack"><em>我的</em></i><span>维修订单</span><b class="edit"></b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<div class="menu">
+					<ul class="">
+						<li class="active">未完成</li>
+						<li>维修中</li>
+						<li>已完成</li>
+					</ul>
+				</div>
+				<div class="menuFill"></div>
+				
+				<div class="orderDetail">
+					<!--未完成-->
+					<div class="item  unFinish">
+						<div class="itemDetail">
+							<ul>
+								<li><i>订单编号:</i><span>888888</span></li>
+								<li><i>预约时间:</i><span>2017.7.24 14:00</span></li>
+								<li><i>订单状态:</i><span>等待商家接单</span></li>
+								<li><i>维修项目:</i><span>内屏碎 外屏碎</span></li>
+								<li><i>维修商家:</i><span>暂无商家信息</span></li>
+							</ul>
+							<div class="handle">
+								<p><i>金额:</i><b>&yen;370</b></p>
+								<p><span class="cancel">取消订单</span></p>
+							</div>
+						</div>
+						
+					</div>
+					<!--维修中-->
+					<div class="item repairing">
+						<div class="itemDetail">
+							<ul>
+								<li><i>订单编号:</i><span>888888</span></li>
+								<li><i>预约时间:</i><span>2017.7.24 14:00</span></li>
+								<li><i>订单状态:</i><span>等待商家接单</span></li>
+								<li><i>维修项目:</i><span>内屏碎 外屏碎</span></li>
+								<li><i>维修商家:</i><span><b>天天科技</b><em>13033554867</em></span></li>
+							</ul>
+							<div class="handle">
+								<p><i>金额:</i><b>&yen;370</b></p>
+								<p><span class="cancelRepairing">取消订单</span><span class="set">设置完成</span></p>
+							</div>
+						</div>
+					</div>
+					<!--已完成-->
+					<div class="item finish">
+						<div class="itemDetail">
+							<ul>
+								<li><i>订单编号:</i><span>888888</span></li>
+								<li><i>预约时间:</i><span>2017.7.24 14:00</span></li>
+								<li><i>订单状态:</i><span>等待商家接单</span></li>
+								<li><i>维修项目:</i><span>内屏碎 外屏碎</span></li>
+								<li><i>维修商家:</i><span>暂无商家信息</span></li>
+							</ul>
+							<div class="handle">
+								<p><i>金额:</i><b>&yen;370</b></p>
+								<p><span class="delete">删除订单</span><span class="common">评论订单</span></p>
+							</div>
+						</div>
+						<div class="itemDetail">
+							<ul>
+								<li><i>订单编号:</i><span>888888</span></li>
+								<li><i>预约时间:</i><span>2017.7.24 14:00</span></li>
+								<li><i>订单状态:</i><span>等待商家接单</span></li>
+								<li><i>维修项目:</i><span>内屏碎 外屏碎</span></li>
+								<li><i>维修商家:</i><span>暂无商家信息</span></li>
+							</ul>
+							<div class="handle">
+								<p><i>金额:</i><b>&yen;370</b></p>
+								<p><span class="delete">删除订单</span><span class="lookCommon">查看评论</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</section>
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('.menu li').click(function(){
+					var index=$(this).index();
+					$(this).addClass('active').siblings().removeClass('active');
+					$('.item').eq(index).show().siblings().hide();
+				})
+				
+				
+				$('.reason li').click(function(){
+					$(this).find('i').addClass('active').parent().siblings().find('i').removeClass('active');
+				})
+				//取消订单
+				$('.cancel').click(function(){
+					$('.layout').show();
+				})
+				//维修中取消订单
+				$('.cancelRepairing').click(function(){
+					$('.layoutRepairing').show();
+				})
+				//删除订单
+				$('.delete').click(function(){
+					console.log('删除订单');
+					$('.layoutDel').show();
+				})
+				//评论订单
+				$('.common').click(function(){
+					$('.layoutCommon').show();
+				})
+				
+				//取消
+				$('.giveUp').click(function(){
+					console.log('取消');
+					$('.layout').hide();
+					$('.layoutDel').hide();
+					$('.layoutCommon').hide();
+					$('.layoutRepairing').hide();
+					
+				})
+				//确定
+				$('.sure').click(function(){
+					console.log('确定');
+					$('.layout').hide();//未完成取消订单
+					$('.layoutDel').hide();//删除订单
+					$('.layoutCommon').hide();//评论订单
+					$('.layoutRepairing').hide();//维修中取消订单
+					
+					
+				})
+				
+				
+				
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>技巧+拆机搜索</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/articleSearch.css"/>
+	</head>
+	<body>
+		<section id="wrap">
+			<header id="header">
+				<i class="goBack"><em></em></i><span><input type="text" name="" class="search" placeholder="如何安装插排线" /><em class="clear"></em></span><b class="edit searchBtn">搜索</b>
+			</header>
+			<section class="headerFill"></section>
+			<section id="content">
+				<div class="hotSearch">
+					<h2>
+						<p><strong>热门搜索</strong></p>
+					</h2>
+					<ul class="searchItems">
+						<li>手机打不通</li>
+						<li>手机听不到声音</li>
+						<li>屏幕坏了</li>
+						<li>充电没反应</li>
+						<li>充电没反应</li>
+						<li>充电没反应</li>
+						<li>充电没反应</li>
+					</ul>
+				</div>
+				<div class="histroy">
+					<!--<h2>
+						<p><i></i><strong>历史记录</strong></p>
+						<p class="clearAll"><b></b><span>清空</span></p>
+					</h2>-->
+					<div class="tip"></div>
+					<!--<ul class="recordList">
+						
+					</ul>-->
+				</div>
+				<!--搜索结果-->
+				<div class="list">
+					<div class="searchResult">
+						<!--搜索结果为图文-->
+						<!--<dl>
+							<dt><img src="img/ar_pic1.png"/></dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/ar_pic1.png"/></dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>换机扬声器技术睇非代理商换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="img/ar_pic1.png"/></dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>-->
+						
+						
+						<!--搜索结果为视频-->
+						<!--<dl>
+							<dt>
+								<img src="img/ar_pic1.png"/>
+								<video width="" height="">
+									<source src="myvideo.mp4" type="video/mp4"></source>
+									<source src="myvideo.ogv" type="video/ogg"></source>
+									<source src="myvideo.webm" type="video/webm"></source>
+									<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+										<param name="movie" value="myvideo.swf" />
+										<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+									</object>
+									当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+								</video>
+								<b><img src="img/2_bofang-.png"/></b>
+							</dt>
+							<dd>
+								<h4>iphone7换机扬声器技术睇非代理商</h4>
+								<p>iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商iphone7换机扬声器技术睇非代理商</p>
+								<div><i>2017-08-11</i><span>评论(<b>20</b>)</span></div>
+							</dd>
+						</dl>-->
+						
+						
+					</div>
+					
+				</div>
+			</section>
+			<section class="footerFill"></section>
+			<footer id="footer">
+				<div class="release">
+					<span class="releaseBtn selectAll"><i></i><b>全选</b></span>
+					<span class="myProblem del">删除</span>
+				</div>
+			</footer>
+		</section>
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+//				if(!localStorage.getItem('record')){
+//					localStorage.setItem('record','[{"title":""}]');
+//				};
+				//点击搜索按钮搜索
+//				$('.searchBtn').click(function(){
+//					if($('.search').val()){
+//						var on=true;
+//						var val=$('.search').val();
+//						var getRecord=localStorage.getItem('record');
+//						var obj=JSON.parse(getRecord)
+//						
+//						for(var i=1;i<obj.length;i++){//循环下标从1开始
+//							if(obj[i].title==val){
+//								on=false;
+//							}
+//						}
+//						if(on){
+//							obj.push({"title":val});
+//							localStorage.setItem('record',JSON.stringify(obj));
+//						}
+//						console.log(obj,JSON.stringify(obj))
+//						$('.search').val('');
+//					}
+//				})
+				
+				//清除搜索框
+				$('.clear').click(function(){
+					$('.search').val('').focus();
+				})
+				
+				
+				
+				//获取焦点显示历史记录，并且将数据渲染到页面
+				$('.search').focus(function(){
+					$('.histroy').show();
+					$('.hotSearch').show();
+					var getRecord=localStorage.getItem('record');
+					var obj=JSON.parse(getRecord);
+					if(obj.length>1){
+						$('.histroy').show();
+					}
+					$('.recordList').html('');
+					for(var i=1;i<obj.length;i++){
+						var li='<li>'+obj[i].title+'</li>';
+						$('.recordList').append(li);
+					}
+					console.log(obj);
+					if($('.recordList li').length==0){
+						$('.tip').show();
+					}else{
+						$('.tip').hide();
+					}
+				})
+				//清空里是记录
+				$('.clearAll').click(function(){
+					localStorage.clear('record');
+					var getRecord=localStorage.getItem('record');
+					$('.histroy ul').html('');
+					localStorage.setItem('record','[{"title":""}]');
+					if($('.recordList li').length==0){
+						$('.tip').show();
+					}else{
+						$('.tip').hide();
+					}
+				})
+				
+				$('.recordList').on('click','li',function(){
+					var val=$(this).text();
+					$('.search').focus().val(val);
+				})
+			})
+		</script>
+	</body>
+</html>

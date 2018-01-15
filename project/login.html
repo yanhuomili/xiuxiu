@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		
+	</head>
+	<body>
+		<header class="header">
+			<!--<p>-->
+				<i class="logo"></i><span>咻修</span>
+			<!--</p>-->
+		</header>
+		<section id="content">
+			<ul class="info">
+				<li><i></i><input type="text" class="phoneNum" placeholder="请输入手机号码" /></li>
+				<li><i></i><input type="text" class="checkCode" placeholder="请输入验证码" /><span class="sendCode">发送验证码</span></li>
+				<li><i></i><input type="password" class="passWord" placeholder="请输入密码" /></li>
+			</ul>
+		</section>
+		<footer id="footer">
+			<a class="loginBtn" href="###">登录</a>
+			<p><a class="registerNow" href="register.html">立即注册</a><a class="forgetPass" href="forgetPassword.html">忘记密码</a></p>
+		</footer>
+		
+		<script type="text/javascript" src="js/phoneadaptation.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var num=60;
+				var timer=null;
+				$('.sendCode').click(function(){
+					$(this).html(num+'s后重新发送');
+					timer=setInterval(function(){
+						num--;
+						$('.sendCode').html(num+'s后重新发送');
+						if(num==0){
+							$('.sendCode').html('发送验证码');
+							num=60;
+							clearInterval(timer);
+						}
+					},1000)
+					
+				})
+				
+			})
+		</script>
+	</body>
+</html>
